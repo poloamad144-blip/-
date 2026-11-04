@@ -1,0 +1,8 @@
+{
+  "name": "Web Project Builder",
+  "description": "منصة مخصصة لتطوير وتعديل تطبيقات ومواقع الويب مع معاينة حية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

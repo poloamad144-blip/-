@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boles Emad — Creative Designer & Visual Art Director</title>
+  <meta name="description" content="Portfolio of Boles Emad — Senior Graphic Designer, Brand Identity Specialist & Creative Developer crafting timeless visual experiences.">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Boles Emad — Creative Designer">
+  <meta property="og:description" content="I design meaningful visual experiences that help brands stand out.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts: Cormorant Garamond (Serif), Plus Jakarta Sans (Body), Syne (Display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#F8F3EF',
+            'ivory-dark': '#EFE7E0',
+            blush: '#E8C5BE',
+            burgundy: '#8F171F',
+            'accent-red': '#D82935',
+            'near-black': '#171212',
+            'muted-gray': '#8C8581',
+            darkBg: '#120E0E',
+            darkCard: '#1A1414',
+            darkSurface: '#241C1C',
+            darkBorder: '#352929',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Syne"', 'sans-serif'],
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -10px rgba(23, 18, 18, 0.08)',
+            'elevated': '0 20px 40px -15px rgba(216, 41, 53, 0.2)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Embedded Custom Styles -->
+  <style>
+    @keyframes loadingBar {
+      0% { transform: scaleX(0); }
+      50% { transform: scaleX(0.7); }
+      100% { transform: scaleX(1); transform-origin: right; }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F8F3EF;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #120E0E;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #8F171F;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D82935;
+    }
+
+    .nav-link.active {
+      background-color: #D82935 !important;
+      color: #FFFFFF !important;
+      box-shadow: 0 4px 14px rgba(216, 41, 53, 0.28);
+    }
+    .nav-link:hover:not(.active) {
+      color: #D82935;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 24s linear infinite;
+    }
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .filter-btn.active {
+      background-color: #D82935;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(216, 41, 53, 0.3);
+    }
+    .filter-btn:not(.active) {
+      color: #8C8581;
+    }
+    .filter-btn:not(.active):hover {
+      color: #171212;
+    }
+    .dark .filter-btn:not(.active):hover {
+      color: #F8F3EF;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #D82935 !important;
+      box-shadow: 0 0 0 3px rgba(216, 41, 53, 0.15) !important;
+    }
+
+    .project-card {
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .marquee-track {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-ivory dark:bg-darkBg text-near-black dark:text-ivory font-sans antialiased selection:bg-accent-red selection:text-white transition-colors duration-300">
+
+  <!-- Page Preloader Curtain -->
+  <div id="preloader" class="fixed inset-0 z-50 bg-near-black flex flex-col items-center justify-center transition-all duration-700 ease-in-out">
+    <div class="text-center overflow-hidden">
+      <h2 class="text-ivory font-serif text-5xl md:text-7xl font-bold tracking-tight mb-2">
+        BOLES<span class="text-accent-red">.</span>
+      </h2>
+      <p class="text-muted-gray uppercase tracking-[0.3em] text-xs font-medium">Creative Designer &amp; Art Director</p>
+    </div>
+    <div class="w-32 h-[2px] bg-darkBorder mt-6 overflow-hidden rounded-full">
+      <div class="w-full h-full bg-accent-red origin-left animate-[loadingBar_1.2s_ease-in-out_infinite]"></div>
+    </div>
+  </div>
+
+  <!-- Left Vertical Fixed Social Bar (Desktop) -->
+  <aside class="fixed left-6 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col items-center gap-6 text-muted-gray">
+    <div class="w-[1px] h-14 bg-muted-gray/30"></div>
+    <a href="https://www.facebook.com/share/19hmeqZVHT/" target="_blank" rel="noopener" class="hover:text-accent-red hover:-translate-y-1 transition-all duration-200" title="Facebook">
+      <i data-lucide="facebook" class="w-5 h-5"></i>
+    </a>
+    <a href="https://www.instagram.com/bowlo_emad?xtok=MXYydzB6b3Q1NmMz" target="_blank" rel="noopener" class="hover:text-accent-red hover:-translate-y-1 transition-all duration-200" title="Instagram">
+      <i data-lucide="instagram" class="w-5 h-5"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/boles-emad-78794942b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="hover:text-accent-red hover:-translate-y-1 transition-all duration-200" title="LinkedIn">
+      <i data-lucide="linkedin" class="w-5 h-5"></i>
+    </a>
+    <a href="https://wa.me/201203894157" target="_blank" rel="noopener" class="hover:text-accent-red hover:-translate-y-1 transition-all duration-200" title="WhatsApp">
+      <i data-lucide="message-circle" class="w-5 h-5"></i>
+    </a>
+    <div class="w-[1px] h-14 bg-muted-gray/30"></div>
+    <span class="[writing-mode:vertical-rl] text-[10px] uppercase tracking-[0.25em] text-muted-gray font-semibold select-none">
+      Follow Designer
+    </span>
+  </aside>
+
+  <!-- Floating Navigation Bar -->
+  <header class="fixed top-4 md:top-6 inset-x-0 z-40 flex justify-center px-4">
+    <nav class="w-full max-w-6xl bg-ivory/90 dark:bg-darkCard/90 backdrop-blur-md border border-near-black/5 dark:border-darkBorder rounded-full py-2.5 px-4 md:px-6 shadow-soft flex items-center justify-between transition-all duration-300">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-1 group">
+        <span class="font-serif text-2xl md:text-3xl font-bold tracking-tight text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+          Boles<span class="text-accent-red">.</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="hidden md:flex items-center gap-1 lg:gap-2 text-sm font-medium text-near-black/80 dark:text-ivory/80">
+        <li><a href="#home" class="nav-link active px-4 py-1.5 rounded-full transition-all">Home</a></li>
+        <li><a href="#about" class="nav-link px-4 py-1.5 rounded-full transition-all">About</a></li>
+        <li><a href="#services" class="nav-link px-4 py-1.5 rounded-full transition-all">Services</a></li>
+        <li><a href="#work" class="nav-link px-4 py-1.5 rounded-full transition-all">Work</a></li>
+        <li><a href="#contact" class="nav-link px-4 py-1.5 rounded-full transition-all">Contact</a></li>
+      </ul>
+
+      <!-- Right Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="p-2 rounded-full border border-near-black/10 dark:border-darkBorder hover:bg-near-black/5 dark:hover:bg-darkSurface text-near-black dark:text-ivory transition-colors" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
+          <i data-lucide="sun" class="w-4 h-4 hidden dark:block text-amber-400"></i>
+        </button>
+
+        <!-- Download CV -->
+        <a href="#download-cv" id="cvBtn" class="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-near-black/15 dark:border-darkBorder text-xs font-semibold uppercase tracking-wider text-near-black dark:text-ivory hover:border-accent-red hover:text-accent-red transition-all">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i>
+          <span>Download CV</span>
+        </a>
+
+        <!-- Let's Talk CTA -->
+        <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-near-black dark:bg-accent-red text-white text-xs font-semibold uppercase tracking-wider hover:bg-accent-red dark:hover:bg-burgundy transition-all shadow-sm">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center gap-2 sm:hidden">
+        <button id="mobileThemeToggle" class="p-2 rounded-full border border-near-black/10 dark:border-darkBorder text-near-black dark:text-ivory">
+          <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
+          <i data-lucide="sun" class="w-4 h-4 hidden dark:block text-amber-400"></i>
+        </button>
+        <button id="menuBtn" class="p-2 rounded-full text-near-black dark:text-ivory focus:outline-none" aria-label="Open Mobile Menu">
+          <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileMenu" class="fixed inset-0 z-30 bg-near-black/95 backdrop-blur-xl flex flex-col justify-between p-8 pt-28 transform translate-x-full transition-transform duration-300 md:hidden">
+    <div class="space-y-6">
+      <span class="text-xs uppercase tracking-[0.3em] text-muted-gray">Navigation</span>
+      <ul class="space-y-4 text-3xl font-serif text-ivory">
+        <li><a href="#home" class="mobile-nav-link block hover:text-accent-red transition-colors">01. Home</a></li>
+        <li><a href="#about" class="mobile-nav-link block hover:text-accent-red transition-colors">02. About</a></li>
+        <li><a href="#services" class="mobile-nav-link block hover:text-accent-red transition-colors">03. Services</a></li>
+        <li><a href="#work" class="mobile-nav-link block hover:text-accent-red transition-colors">04. My Work</a></li>
+        <li><a href="#contact" class="mobile-nav-link block hover:text-accent-red transition-colors">05. Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="pt-8 border-t border-darkBorder space-y-4">
+      <a href="#download-cv" id="mobileCvBtn" class="flex items-center justify-center gap-2 w-full py-3 rounded-full border border-darkBorder text-ivory text-sm font-semibold uppercase tracking-wider">
+        <i data-lucide="download" class="w-4 h-4"></i> Download CV
+      </a>
+      <a href="#contact" class="mobile-nav-link flex items-center justify-center gap-2 w-full py-3.5 rounded-full bg-accent-red text-white text-sm font-semibold uppercase tracking-wider">
+        Let's Talk <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+      </a>
+      <div class="flex justify-center gap-6 pt-4 text-muted-gray">
+        <a href="https://www.facebook.com/share/19hmeqZVHT/" target="_blank" class="hover:text-accent-red" title="Facebook"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+        <a href="https://www.instagram.com/bowlo_emad?xtok=MXYydzB6b3Q1NmMz" target="_blank" class="hover:text-accent-red" title="Instagram"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+        <a href="https://www.linkedin.com/in/boles-emad-78794942b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="hover:text-accent-red" title="LinkedIn"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+        <a href="https://wa.me/201203894157" target="_blank" class="hover:text-accent-red" title="WhatsApp"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="relative min-h-screen pt-32 md:pt-40 pb-20 overflow-hidden flex flex-col justify-between">
+      
+      <!-- Subtle Decorative Background Shape -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/4 w-[500px] md:w-[750px] h-[500px] md:h-[750px] bg-blush/25 dark:bg-burgundy/15 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center">
+          
+          <!-- Left Column (Typography & Call to Actions) -->
+          <div class="lg:col-span-5 order-2 lg:order-1 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blush/40 dark:bg-darkSurface border border-blush/60 dark:border-darkBorder">
+              <span class="w-2 h-2 rounded-full bg-accent-red animate-ping"></span>
+              <span class="text-xs uppercase tracking-[0.2em] font-semibold text-near-black dark:text-ivory">HELLO, I'M BOLES</span>
+            </div>
+
+            <h1 class="font-serif text-6xl sm:text-7xl lg:text-8xl xl:text-9xl font-bold tracking-tight leading-[0.9] text-near-black dark:text-ivory">
+              BOLES<br>
+              <span class="italic font-normal text-burgundy dark:text-accent-red">EMAD</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-muted-gray max-w-md mx-auto lg:mx-0 leading-relaxed">
+              I design meaningful visual experiences that help brands stand out with strategic clarity and timeless editorial luxury.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#work" class="px-7 py-3.5 rounded-full bg-accent-red text-white text-xs font-semibold uppercase tracking-wider hover:bg-burgundy hover:shadow-elevated transition-all flex items-center gap-2">
+                <span>View My Work</span>
+                <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+              </a>
+              <a href="#contact" class="px-7 py-3.5 rounded-full border border-near-black/20 dark:border-darkBorder text-near-black dark:text-ivory text-xs font-semibold uppercase tracking-wider hover:border-accent-red hover:text-accent-red transition-all">
+                Let's Talk
+              </a>
+            </div>
+
+            <div class="pt-4 flex items-center justify-center lg:justify-start gap-6 border-t border-near-black/5 dark:border-darkBorder">
+              <div>
+                <p class="font-serif text-2xl font-bold text-accent-red">06+</p>
+                <p class="text-[11px] uppercase tracking-wider text-muted-gray">Years Experience</p>
+              </div>
+              <div class="w-[1px] h-8 bg-muted-gray/20"></div>
+              <div>
+                <p class="font-serif text-2xl font-bold text-near-black dark:text-ivory">100%</p>
+                <p class="text-[11px] uppercase tracking-wider text-muted-gray">Dedicated Craft</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Column (Overlapping Central Portrait) -->
+          <div class="lg:col-span-4 order-1 lg:order-2 flex justify-center relative">
+            <div class="relative w-72 sm:w-80 md:w-96 aspect-[3/4] group">
+              <div class="absolute -inset-2 bg-gradient-to-b from-blush/60 to-accent-red/20 dark:from-darkBorder dark:to-burgundy/40 rounded-[2.5rem] rotate-1 group-hover:rotate-0 transition-transform duration-500"></div>
+              
+              <div class="relative w-full h-full rounded-[2.2rem] overflow-hidden shadow-2xl bg-near-black">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=80" 
+                  alt="Boles Emad - Creative Designer Portrait" 
+                  class="w-full h-full object-cover object-center grayscale contrast-110 hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-105"
+                  loading="eager"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-near-black/60 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 inset-x-4 text-center">
+                  <span class="inline-block px-3 py-1 rounded-full bg-near-black/80 backdrop-blur-md text-[10px] uppercase tracking-widest text-blush font-semibold border border-white/10">
+                    Art Director &amp; Designer
+                  </span>
+                </div>
+              </div>
+
+              <div class="absolute -bottom-4 -left-4 bg-ivory dark:bg-darkCard p-3.5 rounded-2xl shadow-xl border border-near-black/10 dark:border-darkBorder flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-accent-red/10 text-accent-red flex items-center justify-center">
+                  <i data-lucide="sparkles" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold leading-tight">Editorial Aesthetic</p>
+                  <p class="text-[10px] text-muted-gray">Bespoke Design Systems</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (Bold Condensed Editorial Statement) -->
+          <div class="lg:col-span-3 order-3 space-y-6 text-center lg:text-right">
+            <div class="space-y-3">
+              <span class="text-xs uppercase tracking-[0.25em] text-accent-red font-semibold block">Art Directed Identity</span>
+              <h2 class="font-display text-4xl sm:text-5xl lg:text-4xl xl:text-5xl font-extrabold uppercase tracking-tight text-near-black dark:text-ivory leading-tight">
+                CREATIVE DESIGNER THAT MAKES YOUR <span class="text-accent-red underline decoration-burgundy decoration-2 underline-offset-8">BRAND</span> SEEN.
+              </h2>
+            </div>
+            <p class="text-xs text-muted-gray leading-relaxed hidden sm:block">
+              Balancing high-fashion editorial aesthetics with strategic brand architecture to turn ambitious visions into industry benchmarks.
+            </p>
+            <div class="flex items-center justify-center lg:justify-end gap-2 text-xs font-semibold text-muted-gray">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>Available for Select Projects</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bottom Horizontal Scrolling Red Ticker -->
+      <div class="mt-16 w-full bg-accent-red text-white py-3.5 overflow-hidden shadow-md select-none">
+        <div class="marquee-track flex whitespace-nowrap text-xs md:text-sm font-display uppercase tracking-[0.2em] font-semibold">
+          <div class="marquee-content flex gap-8 items-center">
+            <span>Brand Identity</span> <span class="text-white/60">•</span>
+            <span>Social Media Design</span> <span class="text-white/60">•</span>
+            <span>Print &amp; Packaging</span> <span class="text-white/60">•</span>
+            <span>Video Editing &amp; Motion</span> <span class="text-white/60">•</span>
+            <span>Visual Art Direction</span> <span class="text-white/60">•</span>
+            <span>Creative Development</span> <span class="text-white/60">•</span>
+            <span>Brand Identity</span> <span class="text-white/60">•</span>
+            <span>Social Media Design</span> <span class="text-white/60">•</span>
+            <span>Print &amp; Packaging</span> <span class="text-white/60">•</span>
+            <span>Video Editing &amp; Motion</span> <span class="text-white/60">•</span>
+          </div>
+          <div class="marquee-content flex gap-8 items-center" aria-hidden="true">
+            <span>Brand Identity</span> <span class="text-white/60">•</span>
+            <span>Social Media Design</span> <span class="text-white/60">•</span>
+            <span>Print &amp; Packaging</span> <span class="text-white/60">•</span>
+            <span>Video Editing &amp; Motion</span> <span class="text-white/60">•</span>
+            <span>Visual Art Direction</span> <span class="text-white/60">•</span>
+            <span>Creative Development</span> <span class="text-white/60">•</span>
+            <span>Brand Identity</span> <span class="text-white/60">•</span>
+            <span>Social Media Design</span> <span class="text-white/60">•</span>
+            <span>Print &amp; Packaging</span> <span class="text-white/60">•</span>
+            <span>Video Editing &amp; Motion</span> <span class="text-white/60">•</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="py-24 md:py-32 bg-ivory-dark/40 dark:bg-darkCard/50 border-y border-near-black/5 dark:border-darkBorder relative">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div class="flex items-center gap-4 mb-14">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-accent-red">01 / Story</span>
+          <div class="h-[1px] flex-1 bg-near-black/10 dark:bg-darkBorder"></div>
+          <span class="font-serif italic text-sm text-muted-gray">Distinctive Aesthetic</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <div class="lg:col-span-5 flex flex-col items-center justify-center relative">
+            <div class="relative w-64 sm:w-80 h-64 sm:h-80 group">
+              <div class="absolute -inset-3 rounded-full border border-dashed border-accent-red/40 animate-[spin_30s_linear_infinite]"></div>
+              
+              <div class="w-full h-full rounded-full overflow-hidden border-4 border-ivory dark:border-darkSurface shadow-2xl relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" 
+                  alt="About Boles Emad"
+                  class="w-full h-full object-cover object-center grayscale contrast-115 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="absolute -bottom-2 -right-2 bg-near-black dark:bg-accent-red text-white p-4 rounded-full shadow-lg border border-white/20 text-center">
+                <p class="font-serif text-lg font-bold leading-none">6+</p>
+                <p class="text-[8px] uppercase tracking-wider text-muted-gray dark:text-ivory">Years Exp.</p>
+              </div>
+            </div>
+
+            <div class="mt-8 text-center">
+              <p class="font-serif italic text-lg text-near-black dark:text-ivory">"Design is the silent ambassador of your brand."</p>
+              <p class="text-xs uppercase tracking-widest text-muted-gray mt-1">— Paul Rand Philosophy</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 bg-ivory dark:bg-darkCard p-8 sm:p-12 rounded-3xl border border-near-black/5 dark:border-darkBorder shadow-soft space-y-6">
+            
+            <div class="space-y-2">
+              <span class="text-xs font-semibold uppercase tracking-[0.25em] text-accent-red">WHO IS BOLES?</span>
+              <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-near-black dark:text-ivory leading-tight">
+                Architect of Visual Identity &amp; Editorial Sophistication.
+              </h2>
+            </div>
+
+            <p class="text-base text-muted-gray leading-relaxed">
+              I am <span class="font-semibold text-near-black dark:text-ivory">Boles Emad</span>, a professional graphic designer and creative developer with over 6 years of specialized experience in crafting high-end visual systems. My work spans brand strategy, luxury print collateral, disruptive digital campaigns, and cinematic motion narratives.
+            </p>
+
+            <p class="text-base text-muted-gray leading-relaxed">
+              My approach merges meticulous art direction with contemporary typographic hierarchy. Rather than relying on ephemeral design fads, I construct cohesive visual ecosystems engineered to communicate prestige, evoke emotional resonance, and solve concrete commercial challenges for visionaries worldwide.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-near-black/5 dark:border-darkBorder">
+              <div class="flex items-start gap-3">
+                <div class="p-2 rounded-lg bg-accent-red/10 text-accent-red">
+                  <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-near-black dark:text-ivory">Strategic Clarity</h3>
+                  <p class="text-xs text-muted-gray mt-0.5">Every stroke serves a defined purpose.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="p-2 rounded-lg bg-accent-red/10 text-accent-red">
+                  <i data-lucide="compass" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold uppercase tracking-wider text-near-black dark:text-ivory">Editorial Luxury</h3>
+                  <p class="text-xs text-muted-gray mt-0.5">Generous space and bespoke type.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 flex flex-wrap items-center justify-between gap-4">
+              <a href="#contact" class="px-7 py-3 rounded-full bg-near-black dark:bg-ivory text-ivory dark:text-near-black text-xs font-semibold uppercase tracking-wider hover:bg-accent-red dark:hover:bg-accent-red dark:hover:text-white transition-all flex items-center gap-2">
+                <span>More About Me</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+
+              <div class="text-xs uppercase tracking-[0.2em] font-bold text-muted-gray flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent-red"></span>
+                GRAPHIC DESIGNER WITH 6+ YEARS OF EXPERIENCE
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== TOOLS & SKILLS SECTION ==================== -->
+    <section class="py-20 md:py-28 max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+        <span class="text-xs uppercase tracking-[0.25em] font-bold text-accent-red">Mastered Technologies</span>
+        <h2 class="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-near-black dark:text-ivory">
+          TOOLS I WORK WITH
+        </h2>
+        <p class="text-sm text-muted-gray">Industry-standard creative software utilized at the highest standard of precision and craft.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        
+        <!-- Photoshop -->
+        <div class="group bg-white dark:bg-darkCard p-6 rounded-2xl border border-near-black/5 dark:border-darkBorder hover:border-accent-red hover:-translate-y-2 hover:shadow-soft transition-all duration-300">
+          <div class="w-14 h-14 rounded-xl bg-[#001E36] text-[#31A8FF] font-display font-extrabold text-2xl flex items-center justify-center mb-5 shadow-sm group-hover:scale-110 transition-transform">
+            Ps
+          </div>
+          <h3 class="font-bold text-base text-near-black dark:text-ivory mb-1">Adobe Photoshop</h3>
+          <p class="text-xs text-muted-gray leading-relaxed">Advanced compositing, photo manipulation, editorial retouching, and key visuals.</p>
+          <div class="mt-4 pt-3 border-t border-near-black/5 dark:border-darkBorder flex items-center justify-between text-[11px] text-muted-gray">
+            <span>Proficiency</span>
+            <span class="font-bold text-accent-red">98%</span>
+          </div>
+        </div>
+
+        <!-- Illustrator -->
+        <div class="group bg-white dark:bg-darkCard p-6 rounded-2xl border border-near-black/5 dark:border-darkBorder hover:border-accent-red hover:-translate-y-2 hover:shadow-soft transition-all duration-300">
+          <div class="w-14 h-14 rounded-xl bg-[#330000] text-[#FF9A00] font-display font-extrabold text-2xl flex items-center justify-center mb-5 shadow-sm group-hover:scale-110 transition-transform">
+            Ai
+          </div>
+          <h3 class="font-bold text-base text-near-black dark:text-ivory mb-1">Adobe Illustrator</h3>
+          <p class="text-xs text-muted-gray leading-relaxed">Vector identity systems, custom lettering, iconography, and responsive logo marks.</p>
+          <div class="mt-4 pt-3 border-t border-near-black/5 dark:border-darkBorder flex items-center justify-between text-[11px] text-muted-gray">
+            <span>Proficiency</span>
+            <span class="font-bold text-accent-red">96%</span>
+          </div>
+        </div>
+
+        <!-- InDesign -->
+        <div class="group bg-white dark:bg-darkCard p-6 rounded-2xl border border-near-black/5 dark:border-darkBorder hover:border-accent-red hover:-translate-y-2 hover:shadow-soft transition-all duration-300">
+          <div class="w-14 h-14 rounded-xl bg-[#49021F] text-[#FF3366] font-display font-extrabold text-2xl flex items-center justify-center mb-5 shadow-sm group-hover:scale-110 transition-transform">
+            Id
+          </div>
+          <h3 class="font-bold text-base text-near-black dark:text-ivory mb-1">Adobe InDesign</h3>
+          <p class="text-xs text-muted-gray leading-relaxed">Multi-page brand guidelines, luxury lookbooks, catalogs, and print preparation.</p>
+          <div class="mt-4 pt-3 border-t border-near-black/5 dark:border-darkBorder flex items-center justify-between text-[11px] text-muted-gray">
+            <span>Proficiency</span>
+            <span class="font-bold text-accent-red">92%</span>
+          </div>
+        </div>
+
+        <!-- Premiere Pro -->
+        <div class="group bg-white dark:bg-darkCard p-6 rounded-2xl border border-near-black/5 dark:border-darkBorder hover:border-accent-red hover:-translate-y-2 hover:shadow-soft transition-all duration-300">
+          <div class="w-14 h-14 rounded-xl bg-[#00005B] text-[#9999FF] font-display font-extrabold text-2xl flex items-center justify-center mb-5 shadow-sm group-hover:scale-110 transition-transform">
+            Pr
+          </div>
+          <h3 class="font-bold text-base text-near-black dark:text-ivory mb-1">Adobe Premiere Pro</h3>
+          <p class="text-xs text-muted-gray leading-relaxed">Cinematic commercials, narrative brand videos, pacing, and color grading.</p>
+          <div class="mt-4 pt-3 border-t border-near-black/5 dark:border-darkBorder flex items-center justify-between text-[11px] text-muted-gray">
+            <span>Proficiency</span>
+            <span class="font-bold text-accent-red">90%</span>
+          </div>
+        </div>
+
+        <!-- After Effects -->
+        <div class="group bg-white dark:bg-darkCard p-6 rounded-2xl border border-near-black/5 dark:border-darkBorder hover:border-accent-red hover:-translate-y-2 hover:shadow-soft transition-all duration-300">
+          <div class="w-14 h-14 rounded-xl bg-[#00005B] text-[#D291FF] font-display font-extrabold text-2xl flex items-center justify-center mb-5 shadow-sm group-hover:scale-110 transition-transform">
+            Ae
+          </div>
+          <h3 class="font-bold text-base text-near-black dark:text-ivory mb-1">Adobe After Effects</h3>
+          <p class="text-xs text-muted-gray leading-relaxed">Kinetic typography, animated brand idents, 2D/3D visual effects, and reels.</p>
+          <div class="mt-4 pt-3 border-t border-near-black/5 dark:border-darkBorder flex items-center justify-between text-[11px] text-muted-gray">
+            <span>Proficiency</span>
+            <span class="font-bold text-accent-red">88%</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== WHY WORK WITH ME SECTION ==================== -->
+    <section class="py-24 bg-ivory-dark/30 dark:bg-darkCard/40 border-y border-near-black/5 dark:border-darkBorder">
+      <div class="max-w-5xl mx-auto px-6 lg:px-12">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div class="space-y-3">
+            <span class="text-xs uppercase tracking-[0.25em] font-bold text-accent-red">The Collaborative Advantage</span>
+            <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-near-black dark:text-ivory">
+              WHY WORK WITH ME?
+            </h2>
+          </div>
+          <p class="text-muted-gray text-sm max-w-sm">
+            Five cornerstone commitments delivering unmatched quality, reliability, and measurable aesthetic equity.
+          </p>
+        </div>
+
+        <div class="divide-y divide-near-black/10 dark:divide-darkBorder">
+          
+          <div class="group py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 cursor-pointer transition-all duration-300 hover:px-4 rounded-xl hover:bg-blush/20 dark:hover:bg-darkSurface/60">
+            <div class="flex items-start md:items-center gap-6">
+              <span class="font-serif text-4xl sm:text-5xl font-bold text-muted-gray/50 group-hover:text-accent-red transition-colors">01</span>
+              <div>
+                <h3 class="font-bold text-xl sm:text-2xl text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+                  Strategic Brand Architecture
+                </h3>
+                <p class="text-sm text-muted-gray mt-1 max-w-xl">
+                  Every curve, palette, and typeface is rooted in market positioning and human psychology, transforming passive observers into loyal brand advocates.
+                </p>
+              </div>
+            </div>
+            <div class="self-end md:self-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="arrow-right" class="w-5 h-5 text-accent-red"></i>
+            </div>
+          </div>
+
+          <div class="group py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 cursor-pointer transition-all duration-300 hover:px-4 rounded-xl hover:bg-blush/20 dark:hover:bg-darkSurface/60">
+            <div class="flex items-start md:items-center gap-6">
+              <span class="font-serif text-4xl sm:text-5xl font-bold text-muted-gray/50 group-hover:text-accent-red transition-colors">02</span>
+              <div>
+                <h3 class="font-bold text-xl sm:text-2xl text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+                  Pixel-Perfect Editorial Precision
+                </h3>
+                <p class="text-sm text-muted-gray mt-1 max-w-xl">
+                  Uncompromising attention to typography, negative space, visual tension, and production-ready print standards with zero shortcuts.
+                </p>
+              </div>
+            </div>
+            <div class="self-end md:self-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="arrow-right" class="w-5 h-5 text-accent-red"></i>
+            </div>
+          </div>
+
+          <div class="group py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 cursor-pointer transition-all duration-300 hover:px-4 rounded-xl hover:bg-blush/20 dark:hover:bg-darkSurface/60">
+            <div class="flex items-start md:items-center gap-6">
+              <span class="font-serif text-4xl sm:text-5xl font-bold text-muted-gray/50 group-hover:text-accent-red transition-colors">03</span>
+              <div>
+                <h3 class="font-bold text-xl sm:text-2xl text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+                  Cross-Medium Versatility
+                </h3>
+                <p class="text-sm text-muted-gray mt-1 max-w-xl">
+                  Seamless execution bridging physical tactile packaging, responsive digital interfaces, social media ecosystems, and cinematic motion graphics.
+                </p>
+              </div>
+            </div>
+            <div class="self-end md:self-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="arrow-right" class="w-5 h-5 text-accent-red"></i>
+            </div>
+          </div>
+
+          <div class="group py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 cursor-pointer transition-all duration-300 hover:px-4 rounded-xl hover:bg-blush/20 dark:hover:bg-darkSurface/60">
+            <div class="flex items-start md:items-center gap-6">
+              <span class="font-serif text-4xl sm:text-5xl font-bold text-muted-gray/50 group-hover:text-accent-red transition-colors">04</span>
+              <div>
+                <h3 class="font-bold text-xl sm:text-2xl text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+                  Dependable Deadlines &amp; Direct Communication
+                </h3>
+                <p class="text-sm text-muted-gray mt-1 max-w-xl">
+                  Clear structured milestones, proactive updates, fast feedback loops, and an agile workflow where commitments are strictly respected.
+                </p>
+              </div>
+            </div>
+            <div class="self-end md:self-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="arrow-right" class="w-5 h-5 text-accent-red"></i>
+            </div>
+          </div>
+
+          <div class="group py-8 flex flex-col md:flex-row md:items-center justify-between gap-6 cursor-pointer transition-all duration-300 hover:px-4 rounded-xl hover:bg-blush/20 dark:hover:bg-darkSurface/60">
+            <div class="flex items-start md:items-center gap-6">
+              <span class="font-serif text-4xl sm:text-5xl font-bold text-muted-gray/50 group-hover:text-accent-red transition-colors">05</span>
+              <div>
+                <h3 class="font-bold text-xl sm:text-2xl text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+                  Tangible Commercial Elevation
+                </h3>
+                <p class="text-sm text-muted-gray mt-1 max-w-xl">
+                  Art direction engineered not merely for portfolio glory, but to enhance perceived market value, brand prestige, and commercial return on investment.
+                </p>
+              </div>
+            </div>
+            <div class="self-end md:self-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <i data-lucide="arrow-right" class="w-5 h-5 text-accent-red"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="services" class="py-24 md:py-32 max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div class="space-y-3">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-accent-red">Core Capabilities</span>
+          <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-near-black dark:text-ivory">
+            MY SERVICES
+          </h2>
+        </div>
+        <p class="text-muted-gray text-sm max-w-md">
+          Art directed design solutions tailored for forward-thinking brands, luxury houses, and ambitious creative founders.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Service 1: Brand Identity -->
+        <div class="group bg-white dark:bg-darkCard rounded-3xl overflow-hidden border border-near-black/5 dark:border-darkBorder shadow-soft hover:shadow-elevated transition-all duration-500 flex flex-col justify-between">
+          <div class="relative h-64 sm:h-72 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=900&q=80" 
+              alt="Brand Identity" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-near-black/80 via-near-black/20 to-transparent"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-ivory/90 dark:bg-darkCard/90 text-xs font-bold uppercase tracking-wider text-near-black dark:text-ivory">
+              01 / Core
+            </span>
+          </div>
+          <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+                Brand Identity
+              </h3>
+              <p class="text-sm text-muted-gray mt-2 leading-relaxed">
+                Complete corporate design systems including logo marks, bespoke typography guidelines, color palettes, stationery suites, and brand style guides.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-near-black/5 dark:border-darkBorder flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider font-semibold text-accent-red">Inquire Brand Package</span>
+              <a href="#contact" class="w-10 h-10 rounded-full bg-near-black/5 dark:bg-darkSurface group-hover:bg-accent-red group-hover:text-white flex items-center justify-center transition-colors">
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Social Media Design -->
+        <div class="group bg-white dark:bg-darkCard rounded-3xl overflow-hidden border border-near-black/5 dark:border-darkBorder shadow-soft hover:shadow-elevated transition-all duration-500 flex flex-col justify-between">
+          <div class="relative h-64 sm:h-72 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=900&q=80" 
+              alt="Social Media Design" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-near-black/80 via-near-black/20 to-transparent"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-ivory/90 dark:bg-darkCard/90 text-xs font-bold uppercase tracking-wider text-near-black dark:text-ivory">
+              02 / Digital
+            </span>
+          </div>
+          <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+                Social Media Design
+              </h3>
+              <p class="text-sm text-muted-gray mt-2 leading-relaxed">
+                High-converting editorial feed aesthetics, carousel narratives, promotional campaign creative, and 3D social assets engineered to stop the scroll.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-near-black/5 dark:border-darkBorder flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider font-semibold text-accent-red">Inquire Campaigns</span>
+              <a href="#contact" class="w-10 h-10 rounded-full bg-near-black/5 dark:bg-darkSurface group-hover:bg-accent-red group-hover:text-white flex items-center justify-center transition-colors">
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Print & Packaging -->
+        <div class="group bg-white dark:bg-darkCard rounded-3xl overflow-hidden border border-near-black/5 dark:border-darkBorder shadow-soft hover:shadow-elevated transition-all duration-500 flex flex-col justify-between">
+          <div class="relative h-64 sm:h-72 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=900&q=80" 
+              alt="Print & Packaging" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-near-black/80 via-near-black/20 to-transparent"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-ivory/90 dark:bg-darkCard/90 text-xs font-bold uppercase tracking-wider text-near-black dark:text-ivory">
+              03 / Tactile
+            </span>
+          </div>
+          <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+                Print &amp; Packaging
+              </h3>
+              <p class="text-sm text-muted-gray mt-2 leading-relaxed">
+                Bespoke retail packaging, custom dielines, foil embossing specifications, luxury business cards, product boxes, and editorial print publications.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-near-black/5 dark:border-darkBorder flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider font-semibold text-accent-red">Inquire Packaging</span>
+              <a href="#contact" class="w-10 h-10 rounded-full bg-near-black/5 dark:bg-darkSurface group-hover:bg-accent-red group-hover:text-white flex items-center justify-center transition-colors">
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Video Editing -->
+        <div class="group bg-white dark:bg-darkCard rounded-3xl overflow-hidden border border-near-black/5 dark:border-darkBorder shadow-soft hover:shadow-elevated transition-all duration-500 flex flex-col justify-between">
+          <div class="relative h-64 sm:h-72 overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=80" 
+              alt="Video Editing & Motion" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-near-black/80 via-near-black/20 to-transparent"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-ivory/90 dark:bg-darkCard/90 text-xs font-bold uppercase tracking-wider text-near-black dark:text-ivory">
+              04 / Motion
+            </span>
+          </div>
+          <div class="p-8 space-y-4 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+                Video Editing
+              </h3>
+              <p class="text-sm text-muted-gray mt-2 leading-relaxed">
+                Cinematic promotional films, social video hooks, kinetic typographic title sequences, commercial montage, sound design, and color grading.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-near-black/5 dark:border-darkBorder flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider font-semibold text-accent-red">Inquire Motion Reel</span>
+              <a href="#contact" class="w-10 h-10 rounded-full bg-near-black/5 dark:bg-darkSurface group-hover:bg-accent-red group-hover:text-white flex items-center justify-center transition-colors">
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== STATISTICS SECTION ==================== -->
+    <section class="py-20 bg-near-black text-ivory relative overflow-hidden">
+      <div class="absolute -top-32 -left-32 w-96 h-96 bg-burgundy/40 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-accent-red/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-darkBorder">
+          
+          <div class="py-6 md:py-0 px-4 space-y-2">
+            <div class="font-serif text-6xl lg:text-7xl font-bold text-accent-red flex items-center justify-center">
+              <span class="counter" data-target="10">0</span>
+              <span>+</span>
+            </div>
+            <h4 class="font-display uppercase tracking-widest text-sm font-bold text-ivory">Projects Completed</h4>
+            <p class="text-xs text-muted-gray max-w-xs mx-auto">Full-cycle brand systems, print runs, and launch campaigns delivered flawlessly.</p>
+          </div>
+
+          <div class="py-6 md:py-0 px-4 space-y-2">
+            <div class="font-serif text-6xl lg:text-7xl font-bold text-accent-red flex items-center justify-center">
+              <span class="counter" data-target="17">0</span>
+              <span>+</span>
+            </div>
+            <h4 class="font-display uppercase tracking-widest text-sm font-bold text-ivory">Happy Clients</h4>
+            <p class="text-xs text-muted-gray max-w-xs mx-auto">Entrepreneurs, design studios, and corporate leaders across Egypt and worldwide.</p>
+          </div>
+
+          <div class="py-6 md:py-0 px-4 space-y-2">
+            <div class="font-serif text-6xl lg:text-7xl font-bold text-accent-red flex items-center justify-center">
+              <span class="counter" data-target="6">0</span>
+              <span>+</span>
+            </div>
+            <h4 class="font-display uppercase tracking-widest text-sm font-bold text-ivory">Years of Experience</h4>
+            <p class="text-xs text-muted-gray max-w-xs mx-auto">Continuous mastery of art direction, graphic craft, and creative problem solving.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO / MY WORK SECTION ==================== -->
+    <section id="work" class="py-24 md:py-32 max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
+        <div class="space-y-3">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-accent-red">Selected Archive</span>
+          <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-near-black dark:text-ivory">
+            MY WORK
+          </h2>
+          <p class="text-muted-gray text-sm max-w-md">
+            Click any project to explore detailed case studies, art direction narratives, and visual assets.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2 bg-ivory-dark/60 dark:bg-darkCard p-1.5 rounded-full border border-near-black/5 dark:border-darkBorder max-w-max">
+          <button class="filter-btn active px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all" data-filter="all">All</button>
+          <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all" data-filter="branding">Branding</button>
+          <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all" data-filter="social">Social Media</button>
+          <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all" data-filter="packaging">Print &amp; Packaging</button>
+          <button class="filter-btn px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all" data-filter="video">Video Editing</button>
+        </div>
+      </div>
+
+      <div id="portfolioGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      </div>
+
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-24 md:py-32 bg-ivory-dark/40 dark:bg-darkCard/50 border-t border-near-black/5 dark:border-darkBorder">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-accent-red">Initiate Collaboration</span>
+          <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-near-black dark:text-ivory">
+            CONTACT ME
+          </h2>
+          <p class="text-sm text-muted-gray">Let's discuss how we can elevate your brand with intentional, high-end editorial design.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Left Column: Interactive Contact Form -->
+          <div class="lg:col-span-7 bg-white dark:bg-darkCard p-8 sm:p-10 rounded-3xl border border-near-black/5 dark:border-darkBorder shadow-soft">
+            <form id="contactForm" class="space-y-6" novalidate>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="fullName" class="block text-xs font-semibold uppercase tracking-wider text-near-black dark:text-ivory mb-2">
+                    Full Name <span class="text-accent-red">*</span>
+                  </label>
+                  <input 
+                    type="text" 
+                    id="fullName" 
+                    name="fullName" 
+                    required 
+                    placeholder="e.g. Alexander Vance"
+                    class="w-full px-4 py-3 rounded-xl bg-ivory dark:bg-darkSurface border border-near-black/10 dark:border-darkBorder focus:outline-none focus:border-accent-red text-sm transition-colors text-near-black dark:text-ivory"
+                  >
+                  <p class="error-msg text-xs text-accent-red mt-1 hidden">Please provide your full name.</p>
+                </div>
+
+                <div>
+                  <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-near-black dark:text-ivory mb-2">
+                    Email Address <span class="text-accent-red">*</span>
+                  </label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    placeholder="alexander@brand.com"
+                    class="w-full px-4 py-3 rounded-xl bg-ivory dark:bg-darkSurface border border-near-black/10 dark:border-darkBorder focus:outline-none focus:border-accent-red text-sm transition-colors text-near-black dark:text-ivory"
+                  >
+                  <p class="error-msg text-xs text-accent-red mt-1 hidden">Please enter a valid email address.</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-near-black dark:text-ivory mb-2">
+                    Phone Number
+                  </label>
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    placeholder="+20 120 389 4157"
+                    class="w-full px-4 py-3 rounded-xl bg-ivory dark:bg-darkSurface border border-near-black/10 dark:border-darkBorder focus:outline-none focus:border-accent-red text-sm transition-colors text-near-black dark:text-ivory"
+                  >
+                </div>
+
+                <div>
+                  <label for="company" class="block text-xs font-semibold uppercase tracking-wider text-near-black dark:text-ivory mb-2">
+                    Company Name
+                  </label>
+                  <input 
+                    type="text" 
+                    id="company" 
+                    name="company" 
+                    placeholder="Studio / Brand Name"
+                    class="w-full px-4 py-3 rounded-xl bg-ivory dark:bg-darkSurface border border-near-black/10 dark:border-darkBorder focus:outline-none focus:border-accent-red text-sm transition-colors text-near-black dark:text-ivory"
+                  >
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="projectType" class="block text-xs font-semibold uppercase tracking-wider text-near-black dark:text-ivory mb-2">
+                    Project Type <span class="text-accent-red">*</span>
+                  </label>
+                  <select 
+                    id="projectType" 
+                    name="projectType" 
+                    required
+                    class="w-full px-4 py-3 rounded-xl bg-ivory dark:bg-darkSurface border border-near-black/10 dark:border-darkBorder focus:outline-none focus:border-accent-red text-sm transition-colors text-near-black dark:text-ivory cursor-pointer"
+                  >
+                    <option value="" disabled selected>Select service discipline</option>
+                    <option value="Brand Identity">Brand Identity System</option>
+                    <option value="Social Media Design">Social Media Campaign</option>
+                    <option value="Print & Packaging">Print &amp; Packaging Design</option>
+                    <option value="Video Editing">Video Editing &amp; Motion</option>
+                    <option value="Comprehensive Art Direction">Comprehensive Art Direction</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="projectBudget" class="block text-xs font-semibold uppercase tracking-wider text-near-black dark:text-ivory mb-2">
+                    Project Budget
+                  </label>
+                  <select 
+                    id="projectBudget" 
+                    name="projectBudget" 
+                    class="w-full px-4 py-3 rounded-xl bg-ivory dark:bg-darkSurface border border-near-black/10 dark:border-darkBorder focus:outline-none focus:border-accent-red text-sm transition-colors text-near-black dark:text-ivory cursor-pointer"
+                  >
+                    <option value="$1,000 - $3,000">$1,000 — $3,000</option>
+                    <option value="$3,000 - $5,000">$3,000 — $5,000</option>
+                    <option value="$5,000 - $10,000">$5,000 — $10,000</option>
+                    <option value="$10,000+">$10,000+ (Enterprise)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-near-black dark:text-ivory mb-2">
+                  Message <span class="text-accent-red">*</span>
+                </label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="4" 
+                  required 
+                  placeholder="Tell me about your goals, brand timeline, and scope..."
+                  class="w-full px-4 py-3 rounded-xl bg-ivory dark:bg-darkSurface border border-near-black/10 dark:border-darkBorder focus:outline-none focus:border-accent-red text-sm transition-colors text-near-black dark:text-ivory resize-none"
+                ></textarea>
+                <p class="error-msg text-xs text-accent-red mt-1 hidden">Please provide project details.</p>
+              </div>
+
+              <button 
+                type="submit" 
+                id="submitBtn"
+                class="w-full py-4 rounded-xl bg-accent-red hover:bg-burgundy text-white text-xs font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 shadow-elevated"
+              >
+                <span>Send Message</span>
+                <i data-lucide="send" class="w-4 h-4"></i>
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Right Column: Contact Information Cards -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <!-- WhatsApp Direct Card -->
+            <a 
+              href="https://wa.me/201203894157?text=Hello%20Boles,%20I%20would%20like%20to%20discuss%20a%20creative%20project." 
+              target="_blank" 
+              rel="noopener"
+              class="group bg-white dark:bg-darkCard p-6 rounded-2xl border border-near-black/5 dark:border-darkBorder hover:border-emerald-500 hover:shadow-soft transition-all duration-300 flex items-center justify-between block"
+            >
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <i data-lucide="message-circle" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <p class="text-xs uppercase tracking-wider text-muted-gray font-semibold">Instant Chat</p>
+                  <h4 class="font-bold text-base text-near-black dark:text-ivory group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">WhatsApp Conversation</h4>
+                  <p class="text-xs text-muted-gray mt-0.5">+20 120 389 4157</p>
+                </div>
+              </div>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted-gray group-hover:text-emerald-500 transition-colors"></i>
+            </a>
+
+            <!-- Email Card -->
+            <a 
+              href="mailto:poloamad144@gmail.com" 
+              class="group bg-white dark:bg-darkCard p-6 rounded-2xl border border-near-black/5 dark:border-darkBorder hover:border-accent-red hover:shadow-soft transition-all duration-300 flex items-center justify-between block"
+            >
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-accent-red/10 text-accent-red flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <i data-lucide="mail" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <p class="text-xs uppercase tracking-wider text-muted-gray font-semibold">Direct Inquiries</p>
+                  <h4 class="font-bold text-base text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">poloamad144@gmail.com</h4>
+                  <p class="text-xs text-muted-gray mt-0.5">Response within 24 business hours</p>
+                </div>
+              </div>
+              <i data-lucide="arrow-up-right" class="w-5 h-5 text-muted-gray group-hover:text-accent-red transition-colors"></i>
+            </a>
+
+            <!-- Location Card -->
+            <div class="bg-white dark:bg-darkCard p-6 rounded-2xl border border-near-black/5 dark:border-darkBorder flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-blush/30 dark:bg-darkSurface text-near-black dark:text-ivory flex items-center justify-center">
+                <i data-lucide="map-pin" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-wider text-muted-gray font-semibold">Studio Headquarters</p>
+                <h4 class="font-bold text-base text-near-black dark:text-ivory">Cairo, Egypt</h4>
+                <p class="text-xs text-muted-gray mt-0.5">Partnering with clients worldwide remotely</p>
+              </div>
+            </div>
+
+            <!-- Social Links Grid -->
+            <div class="bg-white dark:bg-darkCard p-6 rounded-2xl border border-near-black/5 dark:border-darkBorder space-y-3">
+              <p class="text-xs uppercase tracking-wider text-muted-gray font-semibold">Follow Creative Output</p>
+              <div class="grid grid-cols-2 gap-3">
+                <a href="https://www.facebook.com/share/19hmeqZVHT/" target="_blank" rel="noopener" class="flex items-center gap-2 p-3 rounded-xl bg-ivory dark:bg-darkSurface hover:bg-accent-red hover:text-white transition-colors text-xs font-semibold">
+                  <i data-lucide="facebook" class="w-4 h-4"></i>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/bowlo_emad?xtok=MXYydzB6b3Q1NmMz" target="_blank" rel="noopener" class="flex items-center gap-2 p-3 rounded-xl bg-ivory dark:bg-darkSurface hover:bg-accent-red hover:text-white transition-colors text-xs font-semibold">
+                  <i data-lucide="instagram" class="w-4 h-4"></i>
+                  <span>Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/in/boles-emad-78794942b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="flex items-center gap-2 p-3 rounded-xl bg-ivory dark:bg-darkSurface hover:bg-accent-red hover:text-white transition-colors text-xs font-semibold">
+                  <i data-lucide="linkedin" class="w-4 h-4"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://wa.me/201203894157" target="_blank" rel="noopener" class="flex items-center gap-2 p-3 rounded-xl bg-ivory dark:bg-darkSurface hover:bg-accent-red hover:text-white transition-colors text-xs font-semibold">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FINAL CTA PANEL ==================== -->
+    <section class="py-20 max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="relative bg-near-black text-ivory rounded-[2.5rem] p-10 sm:p-16 md:p-20 overflow-hidden shadow-2xl">
+        
+        <div class="absolute top-0 right-0 w-[450px] h-[450px] bg-accent-red/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[350px] h-[350px] bg-burgundy/30 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-3xl space-y-6">
+          <span class="text-xs uppercase tracking-[0.3em] font-bold text-accent-red block">Ready To Innovate?</span>
+          
+          <h2 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white leading-[1.05]">
+            LET'S BUILD SOMETHING DIFFERENT.
+          </h2>
+
+          <p class="text-base sm:text-lg text-muted-gray leading-relaxed max-w-xl">
+            Whether launching a flagship brand from zero or modernizing a heritage enterprise, let's craft an identity that demands reverence.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#contact" class="px-8 py-4 rounded-full bg-accent-red hover:bg-burgundy text-white text-xs font-bold uppercase tracking-widest transition-all shadow-elevated flex items-center gap-2">
+              <span>Start a Project</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#work" class="px-8 py-4 rounded-full border border-white/20 hover:border-white text-white text-xs font-bold uppercase tracking-widest transition-all">
+              View My Work
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== STRUCTURED FOOTER ==================== -->
+  <footer class="bg-white dark:bg-darkCard border-t border-near-black/5 dark:border-darkBorder pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14 border-b border-near-black/5 dark:border-darkBorder">
+        
+        <div class="md:col-span-5 space-y-4">
+          <a href="#home" class="inline-block font-serif text-3xl font-bold tracking-tight text-near-black dark:text-ivory">
+            Boles<span class="text-accent-red">.</span>
+          </a>
+          <p class="text-xs text-muted-gray leading-relaxed max-w-sm">
+            Professional graphic designer and creative developer crafting timeless visual identities, editorial publications, and high-impact digital experiences.
+          </p>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <span class="text-xs uppercase tracking-widest font-bold text-near-black dark:text-ivory">Navigation</span>
+          <ul class="space-y-2 text-xs text-muted-gray">
+            <li><a href="#home" class="hover:text-accent-red transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-accent-red transition-colors">About Boles</a></li>
+            <li><a href="#services" class="hover:text-accent-red transition-colors">My Services</a></li>
+            <li><a href="#work" class="hover:text-accent-red transition-colors">Selected Projects</a></li>
+            <li><a href="#contact" class="hover:text-accent-red transition-colors">Contact Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-3">
+          <span class="text-xs uppercase tracking-widest font-bold text-near-black dark:text-ivory">Digital Channels</span>
+          <p class="text-xs text-muted-gray">Explore active showcases and behind-the-scenes works.</p>
+          <div class="flex items-center gap-3 pt-2 text-near-black dark:text-ivory">
+            <a href="https://www.facebook.com/share/19hmeqZVHT/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-ivory dark:bg-darkSurface flex items-center justify-center hover:bg-accent-red hover:text-white transition-colors" title="Facebook">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.instagram.com/bowlo_emad?xtok=MXYydzB6b3Q1NmMz" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-ivory dark:bg-darkSurface flex items-center justify-center hover:bg-accent-red hover:text-white transition-colors" title="Instagram">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/boles-emad-78794942b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-ivory dark:bg-darkSurface flex items-center justify-center hover:bg-accent-red hover:text-white transition-colors" title="LinkedIn">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/201203894157" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-ivory dark:bg-darkSurface flex items-center justify-center hover:bg-accent-red hover:text-white transition-colors" title="WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-gray">
+        <p>&copy; 2026 Boles Emad. All Rights Reserved.</p>
+        <p class="italic font-serif">Engineered with Editorial Luxury &amp; Precision</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FULL-SCREEN PROJECT MODAL ==================== -->
+  <div id="projectModal" class="fixed inset-0 z-50 bg-near-black/90 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+    <div class="relative w-full max-w-4xl max-h-[90vh] bg-ivory dark:bg-darkCard rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-near-black/10 dark:border-darkBorder">
+      
+      <div class="p-4 sm:p-6 border-b border-near-black/10 dark:border-darkBorder flex items-center justify-between">
+        <div>
+          <span id="modalCategory" class="text-xs uppercase tracking-widest font-bold text-accent-red"></span>
+          <h3 id="modalTitle" class="font-serif text-2xl sm:text-3xl font-bold text-near-black dark:text-ivory mt-0.5"></h3>
+        </div>
+        <button id="modalCloseBtn" class="p-2.5 rounded-full hover:bg-near-black/10 dark:hover:bg-darkSurface text-near-black dark:text-ivory transition-colors" aria-label="Close Project Modal">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="overflow-y-auto p-6 sm:p-8 space-y-6 flex-1">
+        <div id="modalMediaContainer" class="rounded-2xl overflow-hidden bg-near-black aspect-video max-h-96 w-full relative">
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-4 border-y border-near-black/10 dark:border-darkBorder text-xs">
+          <div>
+            <span class="text-muted-gray uppercase tracking-wider block">Client</span>
+            <span id="modalClient" class="font-bold text-near-black dark:text-ivory"></span>
+          </div>
+          <div>
+            <span class="text-muted-gray uppercase tracking-wider block">Year</span>
+            <span id="modalYear" class="font-bold text-near-black dark:text-ivory"></span>
+          </div>
+          <div>
+            <span class="text-muted-gray uppercase tracking-wider block">Role</span>
+            <span class="font-bold text-near-black dark:text-ivory">Lead Creative Direction</span>
+          </div>
+          <div>
+            <span class="text-muted-gray uppercase tracking-wider block">Deliverables</span>
+            <span id="modalDeliverables" class="font-bold text-near-black dark:text-ivory"></span>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-serif text-xl font-bold text-near-black dark:text-ivory">Art Direction &amp; Concept</h4>
+          <p id="modalDescription" class="text-sm text-muted-gray leading-relaxed"></p>
+        </div>
+
+        <div id="modalTags" class="flex flex-wrap gap-2 pt-2"></div>
+
+        <div class="pt-4 flex justify-end">
+          <a id="modalExternalLink" href="#" target="_blank" class="px-6 py-3 rounded-full bg-accent-red text-white text-xs font-bold uppercase tracking-wider hover:bg-burgundy transition-all flex items-center gap-2">
+            <span>Explore Case Study Live</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== FORM SUCCESS TOAST ==================== -->
+  <div id="toastSuccess" class="fixed bottom-6 right-6 z-50 bg-near-black text-ivory p-5 rounded-2xl shadow-2xl border border-accent-red/30 flex items-center gap-4 transform translate-y-24 opacity-0 transition-all duration-300 max-w-md">
+    <div class="w-10 h-10 rounded-full bg-accent-red/20 text-accent-red flex items-center justify-center shrink-0">
+      <i data-lucide="check" class="w-5 h-5"></i>
+    </div>
+    <div>
+      <h5 class="text-sm font-bold text-white">Message Dispatched!</h5>
+      <p class="text-xs text-muted-gray mt-0.5">Thank you! Boles will review your brief and get back to you within 24 hours.</p>
+    </div>
+  </div>
+
+  <!-- ==================== BACK TO TOP BUTTON ==================== -->
+  <button id="backToTop" class="fixed bottom-6 left-6 z-30 p-3 rounded-full bg-near-black dark:bg-ivory text-white dark:text-near-black shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-accent-red dark:hover:bg-accent-red dark:hover:text-white" aria-label="Back to Top">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- ==================== EMBEDDED JAVASCRIPT ==================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Initialize Icons
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+
+      // 2. Preloader Curtain Reveal
+      const preloader = document.getElementById('preloader');
+      const hidePreloader = () => {
+        if (preloader && !preloader.classList.contains('opacity-0')) {
+          preloader.classList.add('opacity-0', 'pointer-events-none');
+          setTimeout(() => preloader.remove(), 700);
+        }
+      };
+      window.addEventListener('load', () => setTimeout(hidePreloader, 350));
+      setTimeout(hidePreloader, 1000);
+
+      // 3. Dark / Light Mode Switcher
+      const themeToggle = document.getElementById('themeToggle');
+      const mobileThemeToggle = document.getElementById('mobileThemeToggle');
+      const html = document.documentElement;
+      const savedTheme = localStorage.getItem('boles_theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        html.classList.add('dark');
+      } else {
+        html.classList.remove('dark');
+      }
+
+      function toggleTheme() {
+        html.classList.toggle('dark');
+        const isDark = html.classList.contains('dark');
+        localStorage.setItem('boles_theme', isDark ? 'dark' : 'light');
+        if (window.lucide) lucide.createIcons();
+      }
+
+      if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
+      if (mobileThemeToggle) mobileThemeToggle.addEventListener('click', toggleTheme);
+
+      // 4. Mobile Menu Drawer
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+      let isMenuOpen = false;
+
+      function toggleMobileMenu(open) {
+        isMenuOpen = open;
+        if (open) {
+          mobileMenu.classList.remove('translate-x-full');
+          document.body.classList.add('overflow-hidden');
+        } else {
+          mobileMenu.classList.add('translate-x-full');
+          document.body.classList.remove('overflow-hidden');
+        }
+      }
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => toggleMobileMenu(!isMenuOpen));
+        mobileNavLinks.forEach(link => {
+          link.addEventListener('click', () => toggleMobileMenu(false));
+        });
+      }
+
+      // 5. Scroll Spy & Active Nav Highlight
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('header .nav-link');
+
+      window.addEventListener('scroll', () => {
+        const scrollY = window.pageYOffset;
+        sections.forEach(current => {
+          const sectionHeight = current.offsetHeight;
+          const sectionTop = current.offsetTop - 140;
+          const sectionId = current.getAttribute('id');
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${sectionId}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, { passive: true });
+
+      // 6. Statistics Animated Counters
+      const statsCounters = document.querySelectorAll('.counter');
+      let statsDone = false;
+
+      function animateCounters() {
+        statsCounters.forEach(counter => {
+          const target = +counter.getAttribute('data-target');
+          const duration = 1600;
+          const stepTime = 25;
+          const steps = duration / stepTime;
+          const increment = target / steps;
+          let current = 0;
+
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              counter.textContent = target;
+              clearInterval(timer);
+            } else {
+              counter.textContent = Math.ceil(current);
+            }
+          }, stepTime);
+        });
+      }
+
+      const statsEl = document.querySelector('.counter')?.closest('section');
+      if (statsEl) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !statsDone) {
+              statsDone = true;
+              animateCounters();
+            }
+          });
+        }, { threshold: 0.3 });
+        observer.observe(statsEl);
+      }
+
+      // 7. Portfolio Projects Dataset & Filter
+      const portfolioProjects = [
+        {
+          id: 1,
+          title: 'Aura Botanicals',
+          category: 'branding',
+          categoryLabel: 'Brand Identity',
+          thumbnail: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=900&q=80',
+          client: 'Aura Skincare Labs',
+          year: '2025',
+          deliverables: 'Visual Identity, Packaging & Guidelines',
+          description: 'A holistic botanical brand identity balancing Scandinavian minimalism with organic luxury. Developed comprehensive visual guidelines, tactile unboxing packaging, custom embossed wordmarks, and art directed photographic guidelines.',
+          tags: ['Luxury Branding', 'Typography', 'Stationery', 'Cosmetics'],
+          liveUrl: 'https://www.linkedin.com/in/boles-emad-78794942b'
+        },
+        {
+          id: 2,
+          title: 'Velvet & Noir Lookbook',
+          category: 'packaging',
+          categoryLabel: 'Print & Packaging',
+          thumbnail: 'https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=900&q=80',
+          client: 'Maison Noir Paris',
+          year: '2024',
+          deliverables: 'Hardcover Publication & Foil Packaging',
+          description: 'Editorial publication and collector-edition packaging for a luxury haute-couture fashion house. Features custom blind debossing, metallic copper foil accents on raw textured stock, and a bespoke serif typographic rhythm.',
+          tags: ['Print Production', 'Foil Stamping', 'Editorial', 'Luxury'],
+          liveUrl: 'https://www.linkedin.com/in/boles-emad-78794942b'
+        },
+        {
+          id: 3,
+          title: 'Kinetic Sound Festival',
+          category: 'social',
+          categoryLabel: 'Social Media',
+          thumbnail: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=900&q=80',
+          client: 'Kinetic Music Global',
+          year: '2025',
+          deliverables: 'Social Feed Campaign & Motion Teasers',
+          description: 'High-energy editorial campaign created for an electronic music festival. Developed a sequence of 24 multi-panel carousel layouts, dynamic festival artist lineup posters, and disruptive motion graphics with 3.2M impressions.',
+          tags: ['Social Strategy', 'Motion Posters', 'Festival Campaign'],
+          liveUrl: 'https://www.instagram.com/bowlo_emad'
+        },
+        {
+          id: 4,
+          title: 'Neo Tokyo Cinema Sequence',
+          category: 'video',
+          categoryLabel: 'Video Editing',
+          thumbnail: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=80',
+          client: 'Cyberpulse Productions',
+          year: '2024',
+          deliverables: 'Opening Title Sequence & Color Grading',
+          description: 'A cinematic, high-contrast title sequence combining futuristic typography, analog film grain, and glitch motion choreography. Engineered custom sound design sync and deep atmospheric color grading.',
+          tags: ['Title Sequence', 'Motion Graphics', 'Sound Design'],
+          liveUrl: 'https://www.instagram.com/bowlo_emad'
+        },
+        {
+          id: 5,
+          title: 'Monolith Architecture',
+          category: 'branding',
+          categoryLabel: 'Brand Identity',
+          thumbnail: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80',
+          client: 'Monolith Studio London',
+          year: '2025',
+          deliverables: 'Identity System & Architectural Monograph',
+          description: 'Branding for a brutalist architectural firm. Anchored by heavy structured grids, expansive white space, monochrome stark contrast, and custom architectural signage schemes.',
+          tags: ['Minimalism', 'Architecture', 'Grid Systems'],
+          liveUrl: 'https://www.facebook.com/share/19hmeqZVHT/'
+        },
+        {
+          id: 6,
+          title: 'Elysium Reserve Gin',
+          category: 'packaging',
+          categoryLabel: 'Print & Packaging',
+          thumbnail: 'https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=900&q=80',
+          client: 'Elysium Distillers',
+          year: '2024',
+          deliverables: 'Bottle Label, Seal & Custom Wooden Box',
+          description: 'Artisan botanical gin packaging featuring hand-drawn botanical illustrations, custom tactile cotton paper label with gold hot foil stamping, and serialized wax seals.',
+          tags: ['Bottle Packaging', 'Illustration', 'Gold Foil'],
+          liveUrl: 'https://www.facebook.com/share/19hmeqZVHT/'
+        }
+      ];
+
+      const portfolioGrid = document.getElementById('portfolioGrid');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+
+      function renderPortfolio(filter = 'all') {
+        if (!portfolioGrid) return;
+        portfolioGrid.innerHTML = '';
+
+        const filtered = filter === 'all' 
+          ? portfolioProjects 
+          : portfolioProjects.filter(p => p.category === filter);
+
+        filtered.forEach(project => {
+          const card = document.createElement('article');
+          card.className = 'project-card group bg-white dark:bg-darkCard rounded-3xl overflow-hidden border border-near-black/5 dark:border-darkBorder shadow-soft cursor-pointer flex flex-col justify-between';
+
+          card.innerHTML = `
+            <div class="relative aspect-[4/3] overflow-hidden bg-near-black">
+              <img 
+                src="${project.thumbnail}" 
+                alt="${project.title}" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-near-black/75 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-ivory/90 dark:bg-darkCard/90 text-[10px] font-bold uppercase tracking-widest text-near-black dark:text-ivory">
+                ${project.categoryLabel}
+              </span>
+              <div class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-accent-red text-white flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-md">
+                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+              </div>
+            </div>
+            <div class="p-6 space-y-2">
+              <div class="flex items-center justify-between text-xs text-muted-gray">
+                <span>${project.client}</span>
+                <span>${project.year}</span>
+              </div>
+              <h3 class="font-serif text-2xl font-bold text-near-black dark:text-ivory group-hover:text-accent-red transition-colors">
+                ${project.title}
+              </h3>
+              <p class="text-xs text-muted-gray line-clamp-2 leading-relaxed">
+                ${project.description}
+              </p>
+              <div class="pt-3 border-t border-near-black/5 dark:border-darkBorder flex flex-wrap gap-1.5">
+                ${project.tags.map(t => `<span class="text-[10px] uppercase font-semibold px-2 py-0.5 rounded-md bg-ivory dark:bg-darkSurface text-muted-gray">${t}</span>`).join('')}
+              </div>
+            </div>
+          `;
+
+          card.addEventListener('click', () => openProjectModal(project.id));
+          portfolioGrid.appendChild(card);
+        });
+
+        if (window.lucide) lucide.createIcons();
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderPortfolio(btn.getAttribute('data-filter'));
+        });
+      });
+
+      renderPortfolio();
+
+      // 8. Full-Screen Project Modal
+      const projectModal = document.getElementById('projectModal');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const modalCategory = document.getElementById('modalCategory');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalClient = document.getElementById('modalClient');
+      const modalYear = document.getElementById('modalYear');
+      const modalDeliverables = document.getElementById('modalDeliverables');
+      const modalDescription = document.getElementById('modalDescription');
+      const modalTags = document.getElementById('modalTags');
+      const modalMediaContainer = document.getElementById('modalMediaContainer');
+      const modalExternalLink = document.getElementById('modalExternalLink');
+
+      function openProjectModal(id) {
+        const project = portfolioProjects.find(p => p.id === id);
+        if (!project || !projectModal) return;
+
+        modalCategory.textContent = project.categoryLabel;
+        modalTitle.textContent = project.title;
+        modalClient.textContent = project.client;
+        modalYear.textContent = project.year;
+        modalDeliverables.textContent = project.deliverables;
+        modalDescription.textContent = project.description;
+        modalExternalLink.href = project.liveUrl;
+
+        modalMediaContainer.innerHTML = `
+          <img src="${project.thumbnail}" alt="${project.title}" class="w-full h-full object-cover">
+        `;
+
+        modalTags.innerHTML = project.tags.map(tag => `
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-near-black/5 dark:bg-darkSurface text-near-black dark:text-ivory border border-near-black/5 dark:border-darkBorder">
+            # ${tag}
+          </span>
+        `).join('');
+
+        projectModal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+        requestAnimationFrame(() => projectModal.classList.remove('opacity-0'));
+        if (window.lucide) lucide.createIcons();
+      }
+
+      function closeProjectModal() {
+        if (!projectModal) return;
+        projectModal.classList.add('opacity-0');
+        setTimeout(() => {
+          projectModal.classList.add('hidden');
+          document.body.classList.remove('overflow-hidden');
+        }, 300);
+      }
+
+      if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeProjectModal);
+      if (projectModal) {
+        projectModal.addEventListener('click', (e) => {
+          if (e.target === projectModal) closeProjectModal();
+        });
+      }
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && projectModal && !projectModal.classList.contains('hidden')) {
+          closeProjectModal();
+        }
+      });
+
+      // 9. Contact Form Handling
+      const contactForm = document.getElementById('contactForm');
+      const toastSuccess = document.getElementById('toastSuccess');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const fullName = document.getElementById('fullName');
+          const email = document.getElementById('email');
+          const message = document.getElementById('message');
+          let isValid = true;
+
+          if (!fullName.value.trim()) {
+            fullName.nextElementSibling.classList.remove('hidden');
+            isValid = false;
+          } else {
+            fullName.nextElementSibling.classList.add('hidden');
+          }
+
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!email.value.trim() || !emailRegex.test(email.value.trim())) {
+            email.nextElementSibling.classList.remove('hidden');
+            isValid = false;
+          } else {
+            email.nextElementSibling.classList.add('hidden');
+          }
+
+          if (!message.value.trim()) {
+            message.nextElementSibling.classList.remove('hidden');
+            isValid = false;
+          } else {
+            message.nextElementSibling.classList.add('hidden');
+          }
+
+          if (isValid) {
+            const submitBtn = document.getElementById('submitBtn');
+            const originalContent = submitBtn.innerHTML;
+            submitBtn.innerHTML = `<span>Sending Message...</span>`;
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+              submitBtn.innerHTML = originalContent;
+              submitBtn.disabled = false;
+              contactForm.reset();
+
+              if (toastSuccess) {
+                toastSuccess.classList.remove('opacity-0', 'translate-y-24');
+                setTimeout(() => {
+                  toastSuccess.classList.add('opacity-0', 'translate-y-24');
+                }, 4500);
+              }
+            }, 700);
+          }
+        });
+      }
+
+      // 10. Back To Top
+      const backToTopBtn = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (!backToTopBtn) return;
+        if (window.pageYOffset > 350) {
+          backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        } else {
+          backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+        }
+      }, { passive: true });
+
+      if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      // 11. Download CV Handlers
+      const triggerCVAlert = (e) => {
+        e.preventDefault();
+        alert('Curriculum Vitae: You can link your resume PDF file by setting the href in the CV button in index.html.');
+      };
+      const cvBtn = document.getElementById('cvBtn');
+      const mobileCvBtn = document.getElementById('mobileCvBtn');
+      if (cvBtn) cvBtn.addEventListener('click', triggerCVAlert);
+      if (mobileCvBtn) mobileCvBtn.addEventListener('click', triggerCVAlert);
+    });
+  </script>
+</body>
+</html>

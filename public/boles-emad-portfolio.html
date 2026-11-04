@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boles Emad — Creative Designer & Visual Art Director</title>
+  <meta name="description" content="Portfolio of Boles Emad — Senior Graphic Designer, Brand Identity Specialist & Creative Developer." />
+  <meta property="og:title" content="Boles Emad — Creative Designer" />
+  <meta property="og:description" content="Senior Graphic Designer, Brand Identity Specialist & Creative Developer." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans, Syne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'serif'],
+            display: ['"Syne"', 'sans-serif'],
+          },
+          colors: {
+            brandRed: '#D82935',
+            brandDarkRed: '#8F171F',
+            brandDark: '#171212',
+            brandBeige: '#F8F3EF',
+            brandCardDark: '#1A1414',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    h1, h2, h3, .font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    ::selection { background-color: #D82935; color: #ffffff; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #171212; }
+    ::-webkit-scrollbar-thumb { background: #332626; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #D82935; }
+  </style>
+</head>
+<body class="bg-[#F8F3EF] dark:bg-[#171212] text-[#171212] dark:text-[#F8F3EF] transition-colors duration-300 min-h-screen selection:bg-[#D82935] selection:text-white">
+
+  <!-- ==================== الشريط الجانبي الأيسر للتواصل الاجتماعي ==================== -->
+  <aside 
+    aria-label="Social Profiles Navigation"
+    class="fixed left-3 2xl:left-5 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col items-center gap-4 text-stone-400 select-none pointer-events-auto"
+  >
+    <div class="w-[1.5px] h-12 bg-gradient-to-b from-transparent via-stone-400/30 dark:via-stone-700/50 to-[#D82935]/50 rounded-full"></div>
+    
+    <div class="flex flex-col items-center gap-3 p-2 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md border border-stone-200/80 dark:border-stone-800 shadow-xl">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/share/19hmeqZVHT/" target="_blank" rel="noopener noreferrer" title="Facebook - Boles Emad" class="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-115 relative shadow-sm hover:shadow-lg">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="w-8 h-8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="11" fill="#1877F2" />
+          <path d="M15.5 12.05H13.25V20H10.15V12.05H8.65V9.45H10.15V7.65C10.15 6.2 10.95 4.5 13.3 4.5H15.45V7.05H13.9C13.2 7.05 13.25 7.4 13.25 7.85V9.45H15.5L15.2 12.05H15.5Z" fill="white" />
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/bowlo_emad?xtok=MXYydzB6b3Q1NmMz" target="_blank" rel="noopener noreferrer" title="Instagram - @bowlo_emad" class="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-115 relative shadow-sm hover:shadow-lg">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="w-8 h-8" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ig-grad-sb" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#f09433" />
+              <stop offset="25%" stopColor="#e6683c" />
+              <stop offset="50%" stopColor="#dc2743" />
+              <stop offset="75%" stopColor="#cc2366" />
+              <stop offset="100%" stopColor="#bc1888" />
+            </linearGradient>
+          </defs>
+          <rect width="24" height="24" rx="6" fill="url(#ig-grad-sb)" />
+          <rect x="5" y="5" width="14" height="14" rx="4" stroke="white" stroke-width="1.6" fill="none" />
+          <circle cx="12" cy="12" r="3.2" stroke="white" stroke-width="1.6" fill="none" />
+          <circle cx="16" cy="8" r="0.9" fill="white" />
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/boles-emad-78794942b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" title="LinkedIn - Boles Emad" class="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-115 relative shadow-sm hover:shadow-lg">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="w-8 h-8" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="5" fill="#0A66C2" />
+          <path d="M7.5 19H5V10H7.5V19ZM6.25 8.75C5.45 8.75 4.8 8.1 4.8 7.3C4.8 6.5 5.45 5.85 6.25 5.85C7.05 5.85 7.7 6.5 7.7 7.3C7.7 8.1 7.05 8.75 6.25 8.75ZM19 19H16.5V14.5C16.5 13.4 16.1 12.6 15 12.6C14.1 12.6 13.6 13.2 13.4 13.8V19H10.9V10H13.4V11.2C13.8 10.6 14.6 10 15.9 10C17.6 10 19 11.1 19 13.6V19Z" fill="white" />
+        </svg>
+      </a>
+
+      <!-- WhatsApp (الشعار الرسمي المكتمل الموحد) -->
+      <a href="https://wa.me/201203894157?text=Hello%20Boles,%20I%20would%20like%20to%20discuss%20a%20creative%20project." target="_blank" rel="noopener noreferrer" title="WhatsApp - +20 120 389 4157" class="w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-115 relative shadow-sm hover:shadow-lg">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" class="w-8 h-8" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="11" fill="#25D366" />
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.04 4.5C7.88 4.5 4.5 7.88 4.5 12.04C4.5 13.47 4.9 14.85 5.66 16.06L4.85 19.15L8.03 18.37C9.2 19.07 10.6 19.45 12.04 19.45C16.2 19.45 19.58 16.07 19.58 11.91C19.58 7.75 16.2 4.5 12.04 4.5ZM15.82 14.28C15.63 14.18 14.7 13.72 14.53 13.66C14.36 13.6 14.23 13.56 14.1 13.75C13.97 13.94 13.62 14.36 13.51 14.49C13.4 14.62 13.28 14.63 13.09 14.53C12.9 14.43 12.3 14.23 11.58 13.59C11.02 13.09 10.64 12.47 10.53 12.28C10.42 12.09 10.52 11.99 10.61 11.89C10.7 11.8 10.81 11.66 10.91 11.55C11.01 11.44 11.04 11.36 11.11 11.23C11.17 11.1 11.14 11 11.09 10.9C11.04 10.81 10.67 9.87 10.51 9.5C10.36 9.13 10.21 9.18 10.09 9.17C9.98 9.16 9.86 9.16 9.73 9.16C9.6 9.16 9.39 9.21 9.22 9.4C9.05 9.59 8.56 10.05 8.56 10.98C8.56 11.92 9.24 12.82 9.33 12.95C9.42 13.08 10.67 14.99 12.57 15.81C13.02 16.01 13.37 16.13 13.65 16.22C14.1 16.36 14.51 16.34 14.84 16.29C15.21 16.24 15.96 15.84 16.11 15.4C16.27 14.96 16.27 14.58 16.22 14.5C16.17 14.42 16.05 14.38 15.82 14.28Z" fill="white" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="w-[1.5px] h-10 bg-gradient-to-t from-transparent via-stone-400/30 dark:via-stone-700/50 to-[#D82935]/50 rounded-full"></div>
+    <span class="[writing-mode:vertical-rl] text-[9px] uppercase tracking-[0.25em] text-stone-400 dark:text-stone-500 font-medium hover:text-[#D82935] transition-colors cursor-default">
+      Socials
+    </span>
+  </aside>
+
+  <!-- ==================== رأس الصفحة والتنقل ==================== -->
+  <header class="sticky top-0 z-40 bg-[#F8F3EF]/90 dark:bg-[#171212]/90 backdrop-blur-md border-b border-stone-200 dark:border-stone-800 transition-colors xl:pl-16 2xl:pl-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between">
+      
+      <!-- الشعار -->
+      <a href="#home" class="flex items-center gap-2 group">
+        <span class="font-serif text-3xl font-bold tracking-tight text-[#171212] dark:text-[#F8F3EF]">
+          Boles<span class="text-[#D82935] transition-transform group-hover:scale-125 inline-block">.</span>
+        </span>
+      </a>
+
+      <!-- القائمة في الشاشات الكبيرة -->
+      <nav class="hidden md:flex items-center gap-7 lg:gap-9 text-xs uppercase tracking-widest font-semibold text-stone-600 dark:text-stone-300">
+        <a href="#home" class="hover:text-[#D82935] transition-colors">Home</a>
+        <a href="#about" class="hover:text-[#D82935] transition-colors">About</a>
+        <a href="#tools" class="hover:text-[#D82935] transition-colors">Software</a>
+        <a href="#services" class="hover:text-[#D82935] transition-colors">Services</a>
+        <a href="#work" class="hover:text-[#D82935] transition-colors">Portfolio</a>
+        <a href="#contact" class="hover:text-[#D82935] transition-colors">Contact</a>
+      </nav>
+
+      <!-- الأزرار وتغيير الإضاءة -->
+      <div class="flex items-center gap-3">
+        <!-- زر التبديل بين النهاري والليلي -->
+        <button
+          id="theme-toggle"
+          aria-label="Toggle Dark / Light Mode"
+          class="flex items-center p-1 rounded-full bg-stone-200 dark:bg-stone-800 border border-stone-300 dark:border-stone-700 transition-all cursor-pointer shadow-inner"
+        >
+          <span id="light-pill" class="flex items-center justify-center w-7 h-7 rounded-full text-xs transition-all bg-white text-amber-500 shadow-sm font-medium">
+            ☀️
+          </span>
+          <span id="dark-pill" class="flex items-center justify-center w-7 h-7 rounded-full text-xs transition-all text-stone-400">
+            🌙
+          </span>
+        </button>
+
+        <!-- زر استعراض الـ CV -->
+        <button
+          onclick="openCvModal()"
+          class="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-stone-300 dark:border-stone-800 text-xs font-semibold uppercase tracking-wider hover:border-[#D82935] hover:text-[#D82935] transition-all"
+        >
+          <span>View CV</span>
+        </button>
+
+        <a
+          href="#contact"
+          class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest bg-[#D82935] hover:bg-[#8F171F] text-white shadow-md hover:shadow-lg transition-all"
+        >
+          Get In Touch
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==================== المحتوى الرئيسي ==================== -->
+  <main class="xl:pl-16 2xl:pl-20 transition-all overflow-x-hidden">
+    
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-10 pb-20 md:py-28 overflow-hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      
+      <div class="absolute -top-32 right-0 w-[550px] h-[550px] bg-[#D82935]/10 dark:bg-[#D82935]/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/2 left-0 w-[400px] h-[400px] bg-[#8F171F]/10 dark:bg-[#8F171F]/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+        
+        <!-- العمود الأيسر: النصوص والعنوان -->
+        <div class="lg:col-span-7 space-y-7 z-10 min-w-0">
+          
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-stone-300 dark:border-stone-700 bg-white/60 dark:bg-[#1A1414]/60 backdrop-blur-md shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-[#D82935] animate-ping"></span>
+            <span class="text-[11px] uppercase tracking-[0.25em] font-bold text-stone-700 dark:text-stone-300">
+              Creative Director &amp; Visual Craftsman
+            </span>
+          </div>
+
+          <div class="space-y-3">
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-[#171212] dark:text-[#F8F3EF] leading-[1.05] break-words">
+              BOLES <span class="text-[#D82935] italic">EMAD</span>
+            </h1>
+            <p class="text-sm sm:text-base md:text-lg font-medium text-stone-600 dark:text-stone-300 uppercase tracking-[0.2em]">
+              Graphic Designer &amp; Visual Art Director
+            </p>
+          </div>
+
+          <p class="text-sm sm:text-base md:text-lg text-stone-600 dark:text-stone-400 leading-relaxed max-w-xl break-words">
+            Transforming corporate narratives into enduring visual prestige. Specialized in bespoke brand identities, tactile editorial packaging, and conversion-driven digital creative.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a
+              href="#work"
+              class="px-7 py-3.5 rounded-full bg-[#D82935] hover:bg-[#8F171F] text-white text-xs font-bold uppercase tracking-widest shadow-xl hover:-translate-y-0.5 transition-all flex items-center gap-2"
+            >
+              <span>Explore Selected Work</span>
+              <span>&rarr;</span>
+            </a>
+
+            <!-- زر الواتساب بالشعار المكتمل الدائري الموحد -->
+            <a
+              href="https://wa.me/201203894157?text=Hello%20Boles,%20I%20would%20like%20to%20discuss%20a%20creative%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-3.5 rounded-full border border-stone-300 dark:border-stone-700 bg-white dark:bg-[#1A1414] hover:border-[#25D366] text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2.5 shadow-sm"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="w-5 h-5 shrink-0" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="11" fill="#25D366" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.04 4.5C7.88 4.5 4.5 7.88 4.5 12.04C4.5 13.47 4.9 14.85 5.66 16.06L4.85 19.15L8.03 18.37C9.2 19.07 10.6 19.45 12.04 19.45C16.2 19.45 19.58 16.07 19.58 11.91C19.58 7.75 16.2 4.5 12.04 4.5ZM15.82 14.28C15.63 14.18 14.7 13.72 14.53 13.66C14.36 13.6 14.23 13.56 14.1 13.75C13.97 13.94 13.62 14.36 13.51 14.49C13.4 14.62 13.28 14.63 13.09 14.53C12.9 14.43 12.3 14.23 11.58 13.59C11.02 13.09 10.64 12.47 10.53 12.28C10.42 12.09 10.52 11.99 10.61 11.89C10.7 11.8 10.81 11.66 10.91 11.55C11.01 11.44 11.04 11.36 11.11 11.23C11.17 11.1 11.14 11 11.09 10.9C11.04 10.81 10.67 9.87 10.51 9.5C10.36 9.13 10.21 9.18 10.09 9.17C9.98 9.16 9.86 9.16 9.73 9.16C9.6 9.16 9.39 9.21 9.22 9.4C9.05 9.59 8.56 10.05 8.56 10.98C8.56 11.92 9.24 12.82 9.33 12.95C9.42 13.08 10.67 14.99 12.57 15.81C13.02 16.01 13.37 16.13 13.65 16.22C14.1 16.36 14.51 16.34 14.84 16.29C15.21 16.24 15.96 15.84 16.11 15.4C16.27 14.96 16.27 14.58 16.22 14.5C16.17 14.42 16.05 14.38 15.82 14.28Z" fill="white" />
+              </svg>
+              <span>Direct WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- إحصائيات سريعة -->
+          <div class="grid grid-cols-3 gap-6 pt-6 border-t border-stone-200 dark:border-stone-800">
+            <div>
+              <p class="font-serif text-3xl font-bold text-[#D82935]">04+</p>
+              <p class="text-xs uppercase tracking-wider text-stone-500 font-semibold mt-0.5">Years Mastery</p>
+            </div>
+            <div>
+              <p class="font-serif text-3xl font-bold text-[#171212] dark:text-[#F8F3EF]">85+</p>
+              <p class="text-xs uppercase tracking-wider text-stone-500 font-semibold mt-0.5">Delivered Systems</p>
+            </div>
+            <div>
+              <p class="font-serif text-3xl font-bold text-[#D82935]">100%</p>
+              <p class="text-xs uppercase tracking-wider text-stone-500 font-semibold mt-0.5">Client Devotion</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- العمود الأيمن: الصورة الشخصية نظيفة ومحذوف منها البادج القديم -->
+        <div class="lg:col-span-5 relative flex justify-center">
+          <div class="relative w-full max-w-md aspect-[4/5] rounded-[2.5rem] overflow-hidden border-2 border-stone-300 dark:border-stone-800 shadow-2xl bg-stone-900 group">
+            <img
+              src="/assets/aistudio/captain_boles_84690828.jpg"
+              alt="Boles Emad - Graphic Designer & Visual Art Director"
+              class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+            
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md border border-white/20 dark:border-stone-800 shadow-xl">
+              <p class="text-[11px] uppercase tracking-widest text-[#D82935] font-bold">Cairo &bull; Worldwide</p>
+              <h3 class="font-serif text-xl font-bold text-[#171212] dark:text-white">Boles Emad</h3>
+              <p class="text-xs text-stone-500 font-mono">poloamad144@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== ABOUT & STATS SECTION ==================== -->
+    <section id="about" class="py-20 md:py-28 bg-[#EFE7E0]/40 dark:bg-[#1A1414]/50 border-y border-stone-300/50 dark:border-stone-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6 min-w-0">
+            <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#D82935]">The Creative Mind</span>
+            <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#171212] dark:text-[#F8F3EF] leading-tight break-words">
+              CRAFTING IDENTITIES THAT COMMAND RECOGNITION.
+            </h2>
+            <div class="space-y-4 text-xs sm:text-sm text-stone-600 dark:text-stone-400 leading-relaxed break-words">
+              <p>
+                I am Boles Emad, a Cairo-based Graphic Designer and Visual Art Director. Over four years of dedicated practice, I have partnered with boutique enterprises, corporate institutions, and luxury brands to sculpt visual languages that resonate deeply.
+              </p>
+              <p>
+                My methodology fuses Scandinavian restraint with tactile luxury: every typographic choice, grid proportion, and color harmony is engineered to solve business objectives while evoking emotional respect.
+              </p>
+            </div>
+
+            <div class="pt-2">
+              <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#D82935] hover:underline">
+                <span>Start A Project With Boles</span>
+                <span>&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 grid grid-cols-2 gap-4 sm:gap-6 min-w-0">
+            <div class="p-6 rounded-3xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800 shadow-md">
+              <span class="font-serif text-3xl sm:text-4xl font-bold text-[#D82935]">85+</span>
+              <h4 class="font-bold text-sm text-[#171212] dark:text-white mt-1">Identities Delivered</h4>
+              <p class="text-xs text-stone-500 mt-1">Across lifestyle, cosmetics, tech, and hospitality.</p>
+            </div>
+            <div class="p-6 rounded-3xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800 shadow-md">
+              <span class="font-serif text-3xl sm:text-4xl font-bold text-[#171212] dark:text-white">12</span>
+              <h4 class="font-bold text-sm text-[#171212] dark:text-white mt-1">Global Regions</h4>
+              <p class="text-xs text-stone-500 mt-1">Collaborating with clients across the Middle East & Europe.</p>
+            </div>
+            <div class="p-6 rounded-3xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800 shadow-md">
+              <span class="font-serif text-3xl sm:text-4xl font-bold text-[#D82935]">100%</span>
+              <h4 class="font-bold text-sm text-[#171212] dark:text-white mt-1">Bespoke Vector Work</h4>
+              <p class="text-xs text-stone-500 mt-1">Zero templates. Pure conceptual precision.</p>
+            </div>
+            <div class="p-6 rounded-3xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800 shadow-md">
+              <span class="font-serif text-3xl sm:text-4xl font-bold text-[#171212] dark:text-white">24/7</span>
+              <h4 class="font-bold text-sm text-[#171212] dark:text-white mt-1">Direct Accessibility</h4>
+              <p class="text-xs text-stone-500 mt-1">Rapid consultation via WhatsApp and email.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SOFTWARE MASTERY ==================== -->
+    <section id="tools" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-2.5">
+        <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#D82935]">Technical Fluency</span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#171212] dark:text-[#F8F3EF] break-words">
+          SOFTWARE MASTERY
+        </h2>
+        <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400">
+          Advanced proficiency in the industry's pinnacle creative suites, executing print dielines, vector systems, and cinematic motion.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+        
+        <!-- Photoshop -->
+        <div class="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg mb-4 text-[#31A8FF] bg-[#001E36]">Ps</div>
+            <h3 class="font-bold text-base text-[#171212] dark:text-white">Photoshop</h3>
+            <p class="text-xs text-stone-500 mt-1">Editorial retouching, photo manipulation & key visuals.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-[#31A8FF]">98%</span>
+            <span class="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">Mastery</span>
+          </div>
+        </div>
+
+        <!-- Illustrator -->
+        <div class="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg mb-4 text-[#FF9A00] bg-[#330000]">Ai</div>
+            <h3 class="font-bold text-base text-[#171212] dark:text-white">Illustrator</h3>
+            <p class="text-xs text-stone-500 mt-1">Vector identity systems, custom lettering & logo marks.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-[#FF9A00]">96%</span>
+            <span class="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">Mastery</span>
+          </div>
+        </div>
+
+        <!-- InDesign -->
+        <div class="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg mb-4 text-[#FF3366] bg-[#49021F]">Id</div>
+            <h3 class="font-bold text-base text-[#171212] dark:text-white">InDesign</h3>
+            <p class="text-xs text-stone-500 mt-1">Brand guidelines, catalogs, lookbooks & editorial layout.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-[#FF3366]">92%</span>
+            <span class="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">Mastery</span>
+          </div>
+        </div>
+
+        <!-- Premiere Pro -->
+        <div class="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg mb-4 text-[#9999FF] bg-[#00005B]">Pr</div>
+            <h3 class="font-bold text-base text-[#171212] dark:text-white">Premiere Pro</h3>
+            <p class="text-xs text-stone-500 mt-1">Cinematic commercial video, narrative pacing & color grading.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-[#9999FF]">90%</span>
+            <span class="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">Mastery</span>
+          </div>
+        </div>
+
+        <!-- After Effects -->
+        <div class="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800 shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg mb-4 text-[#D291FF] bg-[#00005B]">Ae</div>
+            <h3 class="font-bold text-base text-[#171212] dark:text-white">After Effects</h3>
+            <p class="text-xs text-stone-500 mt-1">Kinetic typography, animated logo stings & social reels.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between">
+            <span class="text-xs font-mono font-bold text-[#D291FF]">88%</span>
+            <span class="text-[10px] uppercase tracking-wider text-stone-400 font-semibold">Mastery</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="services" class="py-20 md:py-28 bg-[#EFE7E0]/30 dark:bg-[#1A1414]/30 border-y border-stone-300/40 dark:border-stone-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div class="space-y-2.5">
+            <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#D82935]">Core Capabilities</span>
+            <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#171212] dark:text-[#F8F3EF]">
+              MY SERVICES
+            </h2>
+          </div>
+          <p class="text-stone-600 dark:text-stone-400 text-xs sm:text-sm max-w-md">
+            Art directed design solutions tailored for forward-thinking brands, luxury houses, and ambitious creative founders.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          
+          <!-- Service 1 -->
+          <div class="bg-white dark:bg-[#1A1414] rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+            <div class="relative h-56 sm:h-64 overflow-hidden bg-black">
+              <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=900&q=80" alt="Brand Identity Systems" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#171212]/85 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider text-[#171212] dark:text-[#F8F3EF]">
+                01 / Core
+              </span>
+            </div>
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="font-serif text-2xl font-bold text-[#171212] dark:text-white">Brand Identity Systems</h3>
+              <p class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+                Complete corporate design systems including logo marks, bespoke typography guidelines, color palettes, stationery suites, and brand style guides.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Custom Logo & Marks</span>
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Brand Guidelines</span>
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Typography Hierarchy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="bg-white dark:bg-[#1A1414] rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+            <div class="relative h-56 sm:h-64 overflow-hidden bg-black">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=900&q=80" alt="Social Media Design" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#171212]/85 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider text-[#171212] dark:text-[#F8F3EF]">
+                02 / Digital
+              </span>
+            </div>
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="font-serif text-2xl font-bold text-[#171212] dark:text-white">Social Media Design</h3>
+              <p class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+                High-converting editorial feed aesthetics, carousel narratives, promotional campaign creative, and 3D social assets engineered to stop the scroll.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">High-Converting Carousels</span>
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Reels & Story Graphics</span>
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Feed Grids</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-white dark:bg-[#1A1414] rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+            <div class="relative h-56 sm:h-64 overflow-hidden bg-black">
+              <img src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=900&q=80" alt="Print & Packaging Design" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#171212]/85 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider text-[#171212] dark:text-[#F8F3EF]">
+                03 / Tactile
+              </span>
+            </div>
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="font-serif text-2xl font-bold text-[#171212] dark:text-white">Print & Packaging Design</h3>
+              <p class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+                Bespoke retail packaging, custom dielines, foil embossing specifications, luxury business cards, product boxes, and editorial print publications.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Retail Unboxing</span>
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Foil & Emboss Dielines</span>
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Luxury Lookbooks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="bg-white dark:bg-[#1A1414] rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col justify-between">
+            <div class="relative h-56 sm:h-64 overflow-hidden bg-black">
+              <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=80" alt="Video Editing & Motion Design" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#171212]/85 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md text-[11px] font-bold uppercase tracking-wider text-[#171212] dark:text-[#F8F3EF]">
+                04 / Motion
+              </span>
+            </div>
+            <div class="p-6 sm:p-8 space-y-4">
+              <h3 class="font-serif text-2xl font-bold text-[#171212] dark:text-white">Video Editing & Motion Design</h3>
+              <p class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+                Cinematic promotional films, social video hooks, kinetic typographic title sequences, commercial montage, sound design, and color grading.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Cinematic Pacing</span>
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Kinetic Title Typography</span>
+                <span class="text-[10px] uppercase font-semibold px-2.5 py-1 rounded-md bg-[#F8F3EF] dark:bg-[#241C1C] text-stone-600 dark:text-stone-300">Color Grading</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SELECTED WORK / 6 PROJECTS ==================== -->
+    <section id="work" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#D82935]">Curated Archive</span>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#171212] dark:text-[#F8F3EF] mt-1 break-words">
+            SELECTED PROJECTS
+          </h2>
+        </div>
+      </div>
+
+      <!-- شبكة الـ 6 مشاريع الكاملة -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- Project 1 -->
+        <article class="bg-white dark:bg-[#1A1414] rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+          <div class="relative aspect-[4/3] overflow-hidden bg-black">
+            <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80" alt="Aura Botanicals Luxury Identity" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-[#171212] dark:text-[#F8F3EF]">
+              Brand Identity
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <div class="flex items-center justify-between text-xs text-stone-500 font-mono">
+              <span>Aura Skincare Labs</span>
+              <span>2025</span>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#171212] dark:text-white">
+              Aura Botanicals Luxury Identity
+            </h3>
+            <p class="text-xs text-stone-600 dark:text-stone-400 line-clamp-2 leading-relaxed">
+              A holistic botanical brand identity balancing Scandinavian minimalism with organic luxury. Custom embossed wordmarks & tactile packaging.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="bg-white dark:bg-[#1A1414] rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+          <div class="relative aspect-[4/3] overflow-hidden bg-black">
+            <img src="https://images.unsplash.com/photo-1589365278144-c9e705f843ba?auto=format&fit=crop&w=1200&q=80" alt="Velvet & Noir Haute Couture" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-[#171212] dark:text-[#F8F3EF]">
+              Print & Packaging
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <div class="flex items-center justify-between text-xs text-stone-500 font-mono">
+              <span>Maison Noir Paris</span>
+              <span>2024</span>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#171212] dark:text-white">
+              Velvet &amp; Noir Haute Couture
+            </h3>
+            <p class="text-xs text-stone-600 dark:text-stone-400 line-clamp-2 leading-relaxed">
+              Editorial publication and collector-edition packaging for a luxury fashion house featuring blind debossing and metallic foil accents.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="bg-white dark:bg-[#1A1414] rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+          <div class="relative aspect-[4/3] overflow-hidden bg-black">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80" alt="Kinetic Sound Festival Campaign" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-[#171212] dark:text-[#F8F3EF]">
+              Social Media
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <div class="flex items-center justify-between text-xs text-stone-500 font-mono">
+              <span>Kinetic Music Global</span>
+              <span>2025</span>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#171212] dark:text-white">
+              Kinetic Sound Festival Campaign
+            </h3>
+            <p class="text-xs text-stone-600 dark:text-stone-400 line-clamp-2 leading-relaxed">
+              High-energy editorial campaign created for an electronic music festival. 24 multi-panel carousel layouts with 3.2M impressions.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="bg-white dark:bg-[#1A1414] rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+          <div class="relative aspect-[4/3] overflow-hidden bg-black">
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80" alt="Neo Tokyo Cinema Sequence" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-[#171212] dark:text-[#F8F3EF]">
+              Video Editing
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <div class="flex items-center justify-between text-xs text-stone-500 font-mono">
+              <span>Cyberpulse Productions</span>
+              <span>2024</span>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#171212] dark:text-white">
+              Neo Tokyo Cinema Sequence
+            </h3>
+            <p class="text-xs text-stone-600 dark:text-stone-400 line-clamp-2 leading-relaxed">
+              Cinematic, high-contrast title sequence combining futuristic typography, analog film grain, and glitch motion choreography.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="bg-white dark:bg-[#1A1414] rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+          <div class="relative aspect-[4/3] overflow-hidden bg-black">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80" alt="Monolith Architectural Studio" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-[#171212] dark:text-[#F8F3EF]">
+              Brand Identity
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <div class="flex items-center justify-between text-xs text-stone-500 font-mono">
+              <span>Monolith Studio London</span>
+              <span>2025</span>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#171212] dark:text-white">
+              Monolith Architectural Studio
+            </h3>
+            <p class="text-xs text-stone-600 dark:text-stone-400 line-clamp-2 leading-relaxed">
+              Branding for a brutalist architectural firm. Structured modular grid, stark typography, and custom spatial architectural signage.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="bg-white dark:bg-[#1A1414] rounded-3xl overflow-hidden border border-stone-200 dark:border-stone-800 shadow-md hover:-translate-y-1.5 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+          <div class="relative aspect-[4/3] overflow-hidden bg-black">
+            <img src="https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=1200&q=80" alt="Elysium Reserve Botanical Gin" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" />
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-[#171212] dark:text-[#F8F3EF]">
+              Print & Packaging
+            </span>
+          </div>
+          <div class="p-6 space-y-2">
+            <div class="flex items-center justify-between text-xs text-stone-500 font-mono">
+              <span>Elysium Distillers</span>
+              <span>2024</span>
+            </div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-[#171212] dark:text-white">
+              Elysium Reserve Botanical Gin
+            </h3>
+            <p class="text-xs text-stone-600 dark:text-stone-400 line-clamp-2 leading-relaxed">
+              Artisan botanical gin packaging featuring hand-drawn botanical illustrations, tactile cotton paper label, and serialized wax seals.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== FINAL BANNER ==================== -->
+    <section class="py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="relative bg-[#171212] text-white rounded-[2rem] sm:rounded-[2.5rem] p-8 sm:p-14 md:p-18 overflow-hidden shadow-2xl min-w-0">
+        <div class="absolute top-0 right-0 w-[450px] h-[450px] bg-[#D82935]/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[350px] h-[350px] bg-[#8F171F]/30 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-3xl space-y-5">
+          <span class="text-xs uppercase tracking-[0.3em] font-bold text-[#D82935] block">
+            Ready To Elevate Your Presence?
+          </span>
+          <h2 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.08]">
+            LET'S BUILD SOMETHING EXTRAORDINARY.
+          </h2>
+          <p class="text-sm sm:text-base text-stone-400 leading-relaxed max-w-xl">
+            Whether creating a flagship brand from zero or modernizing a heritage enterprise, let's craft an identity that commands respect.
+          </p>
+          <div class="flex flex-wrap items-center gap-3.5 pt-3">
+            <a href="#contact" class="px-7 py-3.5 rounded-full bg-[#D82935] hover:bg-[#8F171F] text-white text-xs font-bold uppercase tracking-widest transition-all shadow-xl">
+              Start A Project &rarr;
+            </a>
+            <button onclick="openCvModal()" class="px-7 py-3.5 rounded-full border border-white/20 hover:border-white text-white text-xs font-bold uppercase tracking-widest transition-all">
+              View Full CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-20 md:py-28 bg-[#EFE7E0]/40 dark:bg-[#1A1414]/50 border-t border-stone-300/50 dark:border-stone-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14 space-y-2.5">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#D82935]">Initiate Collaboration</span>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#171212] dark:text-[#F8F3EF] break-words">
+            CONTACT
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-400">
+            Let's discuss how we can elevate your brand with intentional, high-end editorial design and strategic precision.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          
+          <!-- Contact Form -->
+          <div class="lg:col-span-7 bg-white dark:bg-[#1A1414] p-6 sm:p-8 rounded-3xl border border-stone-200 dark:border-stone-800 shadow-lg">
+            <form id="contact-form" class="space-y-5" onsubmit="event.preventDefault(); alert('Message sent successfully! Boles Emad will review your brief within 24 hours.');">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-[#171212] dark:text-white mb-1.5">Full Name *</label>
+                  <input type="text" required placeholder="Alexander Vance" class="w-full px-3.5 py-3 rounded-xl bg-[#F8F3EF] dark:bg-[#241C1C] border border-stone-300 dark:border-stone-800 focus:outline-none focus:border-[#D82935] text-sm text-[#171212] dark:text-white" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-[#171212] dark:text-white mb-1.5">Email Address *</label>
+                  <input type="email" required placeholder="alexander@brand.com" class="w-full px-3.5 py-3 rounded-xl bg-[#F8F3EF] dark:bg-[#241C1C] border border-stone-300 dark:border-stone-800 focus:outline-none focus:border-[#D82935] text-sm text-[#171212] dark:text-white" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-[#171212] dark:text-white mb-1.5">Phone / WhatsApp</label>
+                  <input type="tel" placeholder="+20 120 389 4157" class="w-full px-3.5 py-3 rounded-xl bg-[#F8F3EF] dark:bg-[#241C1C] border border-stone-300 dark:border-stone-800 focus:outline-none focus:border-[#D82935] text-sm text-[#171212] dark:text-white" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-[#171212] dark:text-white mb-1.5">Expected Budget</label>
+                  <select class="w-full px-3.5 py-3 rounded-xl bg-[#F8F3EF] dark:bg-[#241C1C] border border-stone-300 dark:border-stone-800 focus:outline-none focus:border-[#D82935] text-sm text-[#171212] dark:text-white cursor-pointer">
+                    <option>$1,000 — $3,000</option>
+                    <option>$3,000 — $5,000</option>
+                    <option>$5,000 — $10,000</option>
+                    <option>$10,000+ (Enterprise)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-[#171212] dark:text-white mb-1.5">Brief &amp; Project Scope *</label>
+                <textarea rows="4" required placeholder="Tell Boles about your brand goals, scope, and timeline..." class="w-full px-3.5 py-3 rounded-xl bg-[#F8F3EF] dark:bg-[#241C1C] border border-stone-300 dark:border-stone-800 focus:outline-none focus:border-[#D82935] text-sm text-[#171212] dark:text-white resize-none"></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row items-center gap-3 pt-1">
+                <button type="submit" class="w-full sm:flex-1 py-3.5 rounded-xl bg-[#D82935] hover:bg-[#8F171F] text-white text-xs font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 shadow-lg">
+                  <span>Send Message</span>
+                  <span>&rarr;</span>
+                </button>
+
+                <!-- زر الواتساب الموحد بالشعار الكامل -->
+                <a
+                  href="https://wa.me/201203894157?text=Hello%20Boles,%20I%20am%20interested%20in%20collaborating."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-[#25D366] hover:bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2.5 shadow-md"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="w-5 h-5 shrink-0" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11" fill="#25D366" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.04 4.5C7.88 4.5 4.5 7.88 4.5 12.04C4.5 13.47 4.9 14.85 5.66 16.06L4.85 19.15L8.03 18.37C9.2 19.07 10.6 19.45 12.04 19.45C16.2 19.45 19.58 16.07 19.58 11.91C19.58 7.75 16.2 4.5 12.04 4.5ZM15.82 14.28C15.63 14.18 14.7 13.72 14.53 13.66C14.36 13.6 14.23 13.56 14.1 13.75C13.97 13.94 13.62 14.36 13.51 14.49C13.4 14.62 13.28 14.63 13.09 14.53C12.9 14.43 12.3 14.23 11.58 13.59C11.02 13.09 10.64 12.47 10.53 12.28C10.42 12.09 10.52 11.99 10.61 11.89C10.7 11.8 10.81 11.66 10.91 11.55C11.01 11.44 11.04 11.36 11.11 11.23C11.17 11.1 11.14 11 11.09 10.9C11.04 10.81 10.67 9.87 10.51 9.5C10.36 9.13 10.21 9.18 10.09 9.17C9.98 9.16 9.86 9.16 9.73 9.16C9.6 9.16 9.39 9.21 9.22 9.4C9.05 9.59 8.56 10.05 8.56 10.98C8.56 11.92 9.24 12.82 9.33 12.95C9.42 13.08 10.67 14.99 12.57 15.81C13.02 16.01 13.37 16.13 13.65 16.22C14.1 16.36 14.51 16.34 14.84 16.29C15.21 16.24 15.96 15.84 16.11 15.4C16.27 14.96 16.27 14.58 16.22 14.5C16.17 14.42 16.05 14.38 15.82 14.28Z" fill="white" />
+                  </svg>
+                  <span>Chat on WhatsApp</span>
+                </a>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- قنوات التواصل المباشرة -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <!-- كارت الواتساب المباشر -->
+            <a
+              href="https://wa.me/201203894157?text=Hello%20Boles,%20I%20would%20like%20to%20discuss%20a%20creative%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group bg-white dark:bg-[#1A1414] p-5 sm:p-6 rounded-2xl border border-stone-200 dark:border-stone-800 hover:border-emerald-500 hover:shadow-lg transition-all flex items-center justify-between"
+            >
+              <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0">
+                  <svg width="42" height="42" viewBox="0 0 24 24" fill="none" class="w-10 h-10" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11" fill="#25D366" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.04 4.5C7.88 4.5 4.5 7.88 4.5 12.04C4.5 13.47 4.9 14.85 5.66 16.06L4.85 19.15L8.03 18.37C9.2 19.07 10.6 19.45 12.04 19.45C16.2 19.45 19.58 16.07 19.58 11.91C19.58 7.75 16.2 4.5 12.04 4.5ZM15.82 14.28C15.63 14.18 14.7 13.72 14.53 13.66C14.36 13.6 14.23 13.56 14.1 13.75C13.97 13.94 13.62 14.36 13.51 14.49C13.4 14.62 13.28 14.63 13.09 14.53C12.9 14.43 12.3 14.23 11.58 13.59C11.02 13.09 10.64 12.47 10.53 12.28C10.42 12.09 10.52 11.99 10.61 11.89C10.7 11.8 10.81 11.66 10.91 11.55C11.01 11.44 11.04 11.36 11.11 11.23C11.17 11.1 11.14 11 11.09 10.9C11.04 10.81 10.67 9.87 10.51 9.5C10.36 9.13 10.21 9.18 10.09 9.17C9.98 9.16 9.86 9.16 9.73 9.16C9.6 9.16 9.39 9.21 9.22 9.4C9.05 9.59 8.56 10.05 8.56 10.98C8.56 11.92 9.24 12.82 9.33 12.95C9.42 13.08 10.67 14.99 12.57 15.81C13.02 16.01 13.37 16.13 13.65 16.22C14.1 16.36 14.51 16.34 14.84 16.29C15.21 16.24 15.96 15.84 16.11 15.4C16.27 14.96 16.27 14.58 16.22 14.5C16.17 14.42 16.05 14.38 15.82 14.28Z" fill="white" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Instant Response</p>
+                  <h4 class="font-bold text-base text-[#171212] dark:text-white group-hover:text-emerald-500 transition-colors">WhatsApp Conversation</h4>
+                  <p class="text-xs text-stone-500 font-mono mt-0.5">+20 120 389 4157</p>
+                </div>
+              </div>
+              <span class="text-stone-400">&nearr;</span>
+            </a>
+
+            <!-- الإيميل المباشر -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800 flex items-center justify-between">
+              <div>
+                <p class="text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Direct Email Inquiries</p>
+                <a href="mailto:poloamad144@gmail.com" class="font-bold text-base text-[#171212] dark:text-white hover:text-[#D82935] transition-colors break-all">
+                  poloamad144@gmail.com
+                </a>
+                <p class="text-xs text-stone-500 mt-0.5">Response within 24 hours</p>
+              </div>
+            </div>
+
+            <!-- مقر الاستوديو -->
+            <div class="p-5 sm:p-6 rounded-2xl bg-white dark:bg-[#1A1414] border border-stone-200 dark:border-stone-800">
+              <p class="text-[11px] uppercase tracking-wider text-stone-500 font-semibold">Studio Base</p>
+              <h4 class="font-bold text-base text-[#171212] dark:text-white">Cairo, Egypt</h4>
+              <p class="text-xs text-stone-500 mt-0.5">Collaborating with international clients worldwide</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="xl:pl-16 2xl:pl-20 bg-white dark:bg-[#1A1414] border-t border-stone-200 dark:border-stone-800 pt-16 pb-12 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 space-y-12">
+      
+      <!-- قنوات التواصل المعتمدة باللوجوهات الرسمية -->
+      <div>
+        <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#D82935] block">Official Channels</span>
+        <h3 class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-[#171212] dark:text-white mt-1">
+          CONNECT WITH BOLES EMAD
+        </h3>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+          
+          <!-- Facebook Card -->
+          <a href="https://www.facebook.com/share/19hmeqZVHT/" target="_blank" rel="noopener noreferrer" class="p-5 rounded-2xl bg-[#F8F3EF] dark:bg-[#241C1C] border border-stone-200 dark:border-stone-800 hover:shadow-lg transition-all flex items-center gap-3">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="w-10 h-10 shrink-0" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="11" fill="#1877F2" />
+              <path d="M15.5 12.05H13.25V20H10.15V12.05H8.65V9.45H10.15V7.65C10.15 6.2 10.95 4.5 13.3 4.5H15.45V7.05H13.9C13.2 7.05 13.25 7.4 13.25 7.85V9.45H15.5L15.2 12.05H15.5Z" fill="white" />
+            </svg>
+            <div>
+              <h4 class="font-bold text-sm text-[#171212] dark:text-white">Facebook</h4>
+              <p class="text-xs text-stone-500">Boles Emad</p>
+            </div>
+          </a>
+
+          <!-- Instagram Card -->
+          <a href="https://www.instagram.com/bowlo_emad?xtok=MXYydzB6b3Q1NmMz" target="_blank" rel="noopener noreferrer" class="p-5 rounded-2xl bg-[#F8F3EF] dark:bg-[#241C1C] border border-stone-200 dark:border-stone-800 hover:shadow-lg transition-all flex items-center gap-3">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="w-10 h-10 shrink-0" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="ig-grad-ft" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#f09433" />
+                  <stop offset="25%" stopColor="#e6683c" />
+                  <stop offset="50%" stopColor="#dc2743" />
+                  <stop offset="75%" stopColor="#cc2366" />
+                  <stop offset="100%" stopColor="#bc1888" />
+                </linearGradient>
+              </defs>
+              <rect width="24" height="24" rx="6" fill="url(#ig-grad-ft)" />
+              <rect x="5" y="5" width="14" height="14" rx="4" stroke="white" stroke-width="1.6" fill="none" />
+              <circle cx="12" cy="12" r="3.2" stroke="white" stroke-width="1.6" fill="none" />
+              <circle cx="16" cy="8" r="0.9" fill="white" />
+            </svg>
+            <div>
+              <h4 class="font-bold text-sm text-[#171212] dark:text-white">Instagram</h4>
+              <p class="text-xs text-stone-500">@bowlo_emad</p>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/boles-emad-78794942b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="p-5 rounded-2xl bg-[#F8F3EF] dark:bg-[#241C1C] border border-stone-200 dark:border-stone-800 hover:shadow-lg transition-all flex items-center gap-3">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="w-10 h-10 shrink-0" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="5" fill="#0A66C2" />
+              <path d="M7.5 19H5V10H7.5V19ZM6.25 8.75C5.45 8.75 4.8 8.1 4.8 7.3C4.8 6.5 5.45 5.85 6.25 5.85C7.05 5.85 7.7 6.5 7.7 7.3C7.7 8.1 7.05 8.75 6.25 8.75ZM19 19H16.5V14.5C16.5 13.4 16.1 12.6 15 12.6C14.1 12.6 13.6 13.2 13.4 13.8V19H10.9V10H13.4V11.2C13.8 10.6 14.6 10 15.9 10C17.6 10 19 11.1 19 13.6V19Z" fill="white" />
+            </svg>
+            <div>
+              <h4 class="font-bold text-sm text-[#171212] dark:text-white">LinkedIn</h4>
+              <p class="text-xs text-stone-500">Boles Emad</p>
+            </div>
+          </a>
+
+          <!-- WhatsApp Card (الشعار الدائري المكتمل الموحد) -->
+          <a href="https://wa.me/201203894157?text=Hello%20Boles,%20I%20would%20like%20to%20discuss%20a%20creative%20project." target="_blank" rel="noopener noreferrer" class="p-5 rounded-2xl bg-[#F8F3EF] dark:bg-[#241C1C] border border-stone-200 dark:border-stone-800 hover:shadow-lg transition-all flex items-center gap-3">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="w-10 h-10 shrink-0" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="11" fill="#25D366" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.04 4.5C7.88 4.5 4.5 7.88 4.5 12.04C4.5 13.47 4.9 14.85 5.66 16.06L4.85 19.15L8.03 18.37C9.2 19.07 10.6 19.45 12.04 19.45C16.2 19.45 19.58 16.07 19.58 11.91C19.58 7.75 16.2 4.5 12.04 4.5ZM15.82 14.28C15.63 14.18 14.7 13.72 14.53 13.66C14.36 13.6 14.23 13.56 14.1 13.75C13.97 13.94 13.62 14.36 13.51 14.49C13.4 14.62 13.28 14.63 13.09 14.53C12.9 14.43 12.3 14.23 11.58 13.59C11.02 13.09 10.64 12.47 10.53 12.28C10.42 12.09 10.52 11.99 10.61 11.89C10.7 11.8 10.81 11.66 10.91 11.55C11.01 11.44 11.04 11.36 11.11 11.23C11.17 11.1 11.14 11 11.09 10.9C11.04 10.81 10.67 9.87 10.51 9.5C10.36 9.13 10.21 9.18 10.09 9.17C9.98 9.16 9.86 9.16 9.73 9.16C9.6 9.16 9.39 9.21 9.22 9.4C9.05 9.59 8.56 10.05 8.56 10.98C8.56 11.92 9.24 12.82 9.33 12.95C9.42 13.08 10.67 14.99 12.57 15.81C13.02 16.01 13.37 16.13 13.65 16.22C14.1 16.36 14.51 16.34 14.84 16.29C15.21 16.24 15.96 15.84 16.11 15.4C16.27 14.96 16.27 14.58 16.22 14.5C16.17 14.42 16.05 14.38 15.82 14.28Z" fill="white" />
+            </svg>
+            <div>
+              <h4 class="font-bold text-sm text-[#171212] dark:text-white">WhatsApp</h4>
+              <p class="text-xs text-stone-500">+20 120 389 4157</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- حقوق الملكية الفكرية (تم حذف الجملة الإضافية وجعلها في المنتصف بدقة) -->
+      <div class="pt-6 border-t border-stone-200 dark:border-stone-800 flex items-center justify-center text-xs text-stone-500 text-center">
+        <p>&copy; 2026 Boles Emad. All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== CV MODAL ==================== -->
+  <div id="cv-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="relative bg-white dark:bg-[#1A1414] rounded-3xl max-w-2xl w-full p-6 sm:p-8 border border-stone-200 dark:border-stone-800 shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button onclick="closeCvModal()" class="absolute top-5 right-5 text-stone-400 hover:text-white text-xl">&times;</button>
+      <h3 class="font-serif text-2xl font-bold text-[#171212] dark:text-white mb-2">Curriculum Vitae</h3>
+      <p class="text-xs text-stone-500 mb-6">Boles Emad — Graphic Designer & Visual Art Director</p>
+      <div class="space-y-4 text-xs text-stone-600 dark:text-stone-300">
+        <div>
+          <h4 class="font-bold uppercase tracking-wider text-[#D82935] text-[11px]">Experience</h4>
+          <p class="font-semibold text-sm text-[#171212] dark:text-white mt-1">Senior Visual Art Director & Designer</p>
+          <p class="text-stone-500 text-[11px]">Bespoke Creative Studio &bull; 2021 — Present</p>
+          <p class="mt-1">Delivering brand identities, typography guidelines, packaging dielines, and motion direction.</p>
+        </div>
+        <div class="pt-3 border-t border-stone-200 dark:border-stone-800">
+          <h4 class="font-bold uppercase tracking-wider text-[#D82935] text-[11px]">Core Disciplines</h4>
+          <p class="mt-1">Brand Strategy, Vector Typography, Tactile Packaging, Editorial Layout, Color Science, Film Montage.</p>
+        </div>
+      </div>
+      <div class="mt-8 flex justify-end">
+        <button onclick="closeCvModal()" class="px-6 py-2.5 rounded-full bg-[#D82935] text-white text-xs font-bold uppercase tracking-wider">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== سكربت تفعيل الوضع الليلي والنهاري والمودال ==================== -->
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const lightPill = document.getElementById('light-pill');
+    const darkPill = document.getElementById('dark-pill');
+    
+    function applyTheme(isDark) {
+      if (isDark) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        darkPill.className = 'flex items-center justify-center w-7 h-7 rounded-full text-xs transition-all bg-[#D82935] text-white shadow-sm font-medium';
+        lightPill.className = 'flex items-center justify-center w-7 h-7 rounded-full text-xs transition-all text-stone-400';
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        lightPill.className = 'flex items-center justify-center w-7 h-7 rounded-full text-xs transition-all bg-white text-amber-500 shadow-sm font-medium';
+        darkPill.className = 'flex items-center justify-center w-7 h-7 rounded-full text-xs transition-all text-stone-400';
+      }
+    }
+
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDarkInitial = savedTheme ? savedTheme === 'dark' : prefersDark;
+    applyTheme(isDarkInitial);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isCurrentlyDark = document.documentElement.classList.contains('dark');
+      applyTheme(!isCurrentlyDark);
+    });
+
+    function openCvModal() {
+      const modal = document.getElementById('cv-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeCvModal() {
+      const modal = document.getElementById('cv-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  </script>
+
+</body>
+</html>

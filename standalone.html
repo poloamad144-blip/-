@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boles Emad — Creative Designer & Visual Art Director</title>
+  <meta name="description" content="Portfolio of Boles Emad — Senior Graphic Designer, Brand Identity Specialist & Creative Developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cormorant Garamond"', 'serif'],
+            display: ['"Syne"', 'sans-serif'],
+          },
+          colors: {
+            brandRed: '#D82935',
+            brandDarkRed: '#8F171F',
+            brandDark: '#171212',
+            brandBeige: '#F8F3EF',
+            brandCardDark: '#1A1414',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    h1, h2, h3, .font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+  </style>
+</head>
+<body class="bg-[#F8F3EF] dark:bg-[#171212] text-[#171212] dark:text-[#F8F3EF] transition-colors duration-300 min-h-screen">
+
+  <!-- ==================== LEFT FLOATING BAR ==================== -->
+  <aside class="fixed left-3 2xl:left-5 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col items-center gap-4 text-stone-400 select-none">
+    <div class="w-[1.5px] h-12 bg-gradient-to-b from-transparent to-[#D82935]/50 rounded-full"></div>
+    <div class="flex flex-col items-center gap-3 p-2 rounded-full bg-white/90 dark:bg-[#1A1414]/90 backdrop-blur-md border border-stone-200/80 dark:border-stone-800 shadow-xl">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/share/19hmeqZVHT/" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full flex items-center justify-center transition-all hover:scale-115">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#1877F2" /><path d="M15.5 12.05H13.25V20H10.15V12.05H8.65V9.45H10.15V7.65C10.15 6.2 10.95 4.5 13.3 4.5H15.45V7.05H13.9C13.2 7.05 13.25 7.4 13.25 7.85V9.45H15.5L15.2 12.05H15.5Z" fill="white" /></svg>
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/bowlo_emad?xtok=MXYydzB6b3Q1NmMz" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full flex items-center justify-center transition-all hover:scale-115">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+          <defs><linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stopColor="#f09433" /><stop offset="50%" stopColor="#dc2743" /><stop offset="100%" stopColor="#bc1888" /></linearGradient></defs>
+          <rect width="24" height="24" rx="6" fill="url(#ig-grad)" />
+          <rect x="5" y="5" width="14" height="14" rx="4" stroke="white" stroke-width="1.6" fill="none" />
+          <circle cx="12" cy="12" r="3.2" stroke="white" stroke-width="1.6" fill="none" />
+          <circle cx="16" cy="8" r="0.9" fill="white" />
+        </svg>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/boles-emad-78794942b" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full flex items-center justify-center transition-all hover:scale-115">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="5" fill="#0A66C2" /><path d="M7.5 19H5V10H7.5V19ZM6.25 8.75C5.45 8.75 4.8 8.1 4.8 7.3C4.8 6.5 5.45 5.85 6.25 5.85C7.05 5.85 7.7 6.5 7.7 7.3C7.7 8.1 7.05 8.75 6.25 8.75ZM19 19H16.5V14.5C16.5 13.4 16.1 12.6 15 12.6C14.1 12.6 13.6 13.2 13.4 13.8V19H10.9V10H13.4V11.2C13.8 10.6 14.6 10 15.9 10C17.6 10 19 11.1 19 13.6V19Z" fill="white" /></svg>
+      </a>
+      <!-- WhatsApp (شعار دائري موحد) -->
+      <a href="https://wa.me/201203894157?text=Hello%20Boles" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full flex items-center justify-center transition-all hover:scale-115">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="#25D366" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12.04 4.5C7.88 4.5 4.5 7.88 4.5 12.04C4.5 13.47 4.9 14.85 5.66 16.06L4.85 19.15L8.03 18.37C9.2 19.07 10.6 19.45 12.04 19.45C16.2 19.45 19.58 16.07 19.58 11.91C19.58 7.75 16.2 4.5 12.04 4.5ZM15.82 14.28C15.63 14.18 14.7 13.72 14.53 13.66C14.36 13.6 14.23 13.56 14.1 13.75C13.97 13.94 13.62 14.36 13.51 14.49C13.4 14.62 13.28 14.63 13.09 14.53C12.9 14.43 12.3 14.23 11.58 13.59C11.02 13.09 10.64 12.47 10.53 12.28C10.42 12.09 10.52 11.99 10.61 11.89C10.7 11.8 10.81 11.66 10.91 11.55C11.01 11.44 11.04 11.36 11.11 11.23C11.17 11.1 11.14 11 11.09 10.9C11.04 10.81 10.67 9.87 10.51 9.5C10.36 9.13 10.21 9.18 10.09 9.17C9.98 9.16 9.86 9.16 9.73 9.16C9.6 9.16 9.39 9.21 9.22 9.4C9.05 9.59 8.56 10.05 8.56 10.98C8.56 11.92 9.24 12.82 9.33 12.95C9.42 13.08 10.67 14.99 12.57 15.81C13.02 16.01 13.37 16.13 13.65 16.22C14.1 16.36 14.51 16.34 14.84 16.29C15.21 16.24 15.96 15.84 16.11 15.4C16.27 14.96 16.27 14.58 16.22 14.5C16.17 14.42 16.05 14.38 15.82 14.28Z" fill="white" /></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="sticky top-0 z-40 bg-[#F8F3EF]/90 dark:bg-[#171212]/90 backdrop-blur-md border-b border-stone-200 dark:border-stone-800 xl:pl-16 2xl:pl-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between">
+      <a href="#home" class="font-serif text-3xl font-bold tracking-tight text-[#171212] dark:text-[#F8F3EF]">
+        Boles<span class="text-[#D82935]">.</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-xs uppercase tracking-widest font-semibold text-stone-600 dark:text-stone-300">
+        <a href="#home" class="hover:text-[#D82935]">Home</a>
+        <a href="#about" class="hover:text-[#D82935]">About</a>
+        <a href="#tools" class="hover:text-[#D82935]">Software</a>
+        <a href="#services" class="hover:text-[#D82935]">Services</a>
+        <a href="#work" class="hover:text-[#D82935]">Portfolio</a>
+        <a href="#contact" class="hover:text-[#D82935]">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button id="theme-btn-st" class="flex items-center p-1 rounded-full bg-stone-200 dark:bg-stone-800">
+          <span id="light-icon-st" class="w-7 h-7 rounded-full flex items-center justify-center text-xs bg-white text-amber-500 shadow-sm">☀️</span>
+          <span id="dark-icon-st" class="w-7 h-7 rounded-full flex items-center justify-center text-xs text-stone-400">🌙</span>
+        </button>
+        <a href="#contact" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest bg-[#D82935] text-white">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN ==================== -->
+  <main class="xl:pl-16 2xl:pl-20">
+    <!-- Hero -->
+    <section id="home" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#D82935]">Graphic Designer &amp; Visual Art Director</span>
+          <h1 class="font-serif text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-[#171212] dark:text-white leading-[1.05]">
+            BOLES <span class="text-[#D82935] italic">EMAD</span>
+          </h1>
+          <p class="text-base sm:text-lg text-stone-600 dark:text-stone-300 max-w-xl">
+            Transforming corporate narratives into enduring visual prestige. Specialized in bespoke brand identities, tactile editorial packaging, and digital creative.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#work" class="px-7 py-3.5 rounded-full bg-[#D82935] text-white text-xs font-bold uppercase tracking-widest shadow-xl">
+              Explore Selected Work &rarr;
+            </a>
+            <a href="https://wa.me/201203894157?text=Hello%20Boles" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-full border border-stone-300 dark:border-stone-700 bg-white dark:bg-[#1A1414] text-xs font-bold uppercase tracking-wider flex items-center gap-2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="w-5 h-5"><circle cx="12" cy="12" r="11" fill="#25D366" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12.04 4.5C7.88 4.5 4.5 7.88 4.5 12.04C4.5 13.47 4.9 14.85 5.66 16.06L4.85 19.15L8.03 18.37C9.2 19.07 10.6 19.45 12.04 19.45C16.2 19.45 19.58 16.07 19.58 11.91C19.58 7.75 16.2 4.5 12.04 4.5ZM15.82 14.28C15.63 14.18 14.7 13.72 14.53 13.66C14.36 13.6 14.23 13.56 14.1 13.75C13.97 13.94 13.62 14.36 13.51 14.49C13.4 14.62 13.28 14.63 13.09 14.53C12.9 14.43 12.3 14.23 11.58 13.59C11.02 13.09 10.64 12.47 10.53 12.28C10.42 12.09 10.52 11.99 10.61 11.89C10.7 11.8 10.81 11.66 10.91 11.55C11.01 11.44 11.04 11.36 11.11 11.23C11.17 11.1 11.14 11 11.09 10.9C11.04 10.81 10.67 9.87 10.51 9.5C10.36 9.13 10.21 9.18 10.09 9.17C9.98 9.16 9.86 9.16 9.73 9.16C9.6 9.16 9.39 9.21 9.22 9.4C9.05 9.59 8.56 10.05 8.56 10.98C8.56 11.92 9.24 12.82 9.33 12.95C9.42 13.08 10.67 14.99 12.57 15.81C13.02 16.01 13.37 16.13 13.65 16.22C14.1 16.36 14.51 16.34 14.84 16.29C15.21 16.24 15.96 15.84 16.11 15.4C16.27 14.96 16.27 14.58 16.22 14.5C16.17 14.42 16.05 14.38 15.82 14.28Z" fill="white" /></svg>
+              <span>Direct WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="w-full max-w-md aspect-[4/5] rounded-[2.5rem] overflow-hidden border-2 border-stone-300 dark:border-stone-800 shadow-2xl">
+            <img src="/assets/aistudio/captain_boles_84690828.jpg" alt="Boles Emad" class="w-full h-full object-cover object-top" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Copyright -->
+    <footer class="py-10 border-t border-stone-200 dark:border-stone-800 text-center text-xs text-stone-500">
+      <p>&copy; 2026 Boles Emad. All Rights Reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    const themeBtn = document.getElementById('theme-btn-st');
+    const lightIcon = document.getElementById('light-icon-st');
+    const darkIcon = document.getElementById('dark-icon-st');
+    themeBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      if (isDark) {
+        darkIcon.className = 'w-7 h-7 rounded-full flex items-center justify-center text-xs bg-[#D82935] text-white shadow-sm';
+        lightIcon.className = 'w-7 h-7 rounded-full flex items-center justify-center text-xs text-stone-400';
+      } else {
+        lightIcon.className = 'w-7 h-7 rounded-full flex items-center justify-center text-xs bg-white text-amber-500 shadow-sm';
+        darkIcon.className = 'w-7 h-7 rounded-full flex items-center justify-center text-xs text-stone-400';
+      }
+    });
+  </script>
+</body>
+</html>
